@@ -10,14 +10,16 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+ Daniel Jonatan Silva dos Santos
+ Erasmo Alves da Silva Junior
+ Felipe Gonçalves Sobrinho
+ Geovanne Marco Correa da Silva
+ Tais Barros Santos
+ Vanessa Lima da Silva Chaves
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 
