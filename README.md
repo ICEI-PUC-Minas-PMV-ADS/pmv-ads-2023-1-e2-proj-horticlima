@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Projeto Hortifruti
 
 `CURSO`
 
@@ -10,12 +10,12 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
- Daniel Jonatan Silva dos Santos
- Erasmo Alves da Silva Junior
- Felipe Gonçalves Sobrinho
- Geovanne Marco Correa da Silva
- Tais Barros Santos
- Vanessa Lima da Silva Chaves
+ * Daniel Jonatan Silva dos Santos
+ * Erasmo Alves da Silva Junior
+ * Felipe Gonçalves Sobrinho
+ * Geovanne Marco Correa da Silva
+ * Tais Barros Santos
+ * Vanessa Lima da Silva Chaves
 
 ## Orientador
 
