@@ -1,18 +1,13 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Umas das problemáticas que temos no setor de hortifrúti é a perda de alimentos, vendidos em grandes redes de atacarejo, hiper e supermercados, de acordo com a HFBrasil estima-se uma perda avaliada em 2,26% aproximadamente 7 bilhões de reais anualmente (ou seja, isso significa metade do valor total da produção de frutas e hortaliças produzidas na roça).
+As causas dessas grandes perdas estão ligadas a diversos fatores como furtos, erros administrativos, equívoco na compra de produtos em grandes quantidades, exposição de produtos nas lojas, falta de estimativa de quais produtos serão consumidos de acordo com o clima ou sazonalidade. Diante do exposto o grupo pensou em criar uma aplicação que possa trabalhar com dados estatísticos baseados no clima para mensurar de forma mais assertiva através de relatórios quais frutas, legumes e verduras (FLV) terão mais probabilidade de venda de acordo com o clima e sazonalidade, buscando evitar prejuízo para a área. 
+ 
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Como foi possível observar, um dos problemas vividos pelas grandes redes de mercados trata-se, do prejuízo com o desperdício de alimentos como frutas, legumes e verduras, uma das causas apontadas foi o erro na estimativa de compras e exposição de produtos que realmente serão vendidos mediante a sazonalidade ou condições climáticas para o dia.
 
 ## Objetivos
 
