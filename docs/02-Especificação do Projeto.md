@@ -28,8 +28,15 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 ![requesitosf](/docs/img/requesitosf.png)
 
 ### Requisitos não Funcionais
-![Requesitos não Funcionais](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t2-pmv-ads-2023-1-e2-proj-int-t1-hort/commit/0013dbc539cc6b70701fbf2b7c44fd4150a9a4d5)
 
 
+
+### Restrições
+
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
+
+
+
+### Diagramas de casos de uso
 
 
