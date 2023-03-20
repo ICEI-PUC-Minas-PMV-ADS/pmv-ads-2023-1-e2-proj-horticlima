@@ -28,5 +28,8 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 ![requesitosf](/docs/img/requesitosf.png)
 
 ### Requisitos não Funcionais
+![Requesitos não Funcionais](Requesitos não funcionais.png)
+
+
 
 
