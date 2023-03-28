@@ -6,9 +6,9 @@
 
 `2º Semestre`
 
-Umas das problemáticas que temos no setor de hortifrúti é a perda de alimentos, vendidos em grandes redes de atacarejo, hiper e supermercados, de acordo com a HFBrasil estima-se uma perda avaliada em 2,26% aproximadamente 7 bilhões de reais anualmente (ou seja, isso significa metade do valor total da produção de frutas e hortaliças produzidas na roça).
+Umas das problemáticas que temos no setor de hortifrúti é a perda de alimentos, vendidos em grandes redes de varejo, atacado, restaurantes, de acordo com a HFBrasil estima-se uma perda avaliada em 2,26% aproximadamente 7 bilhões de reais anualmente (ou seja, isso significa metade do valor total da produção de frutas e hortaliças produzidas na roça).
 
-As causas dessas grandes perdas estão ligadas a diversos fatores como furtos, erros administrativos, equívoco na compra de produtos em grandes quantidades, exposição de produtos nas lojas, falta de estimativa de quais produtos serão consumidos de acordo com o clima ou sazonalidade. Diante do exposto o grupo pensou em criar uma aplicação que possa trabalhar com dados estatísticos baseados no clima para mensurar de forma mais assertiva através de relatórios quais frutas, legumes e verduras (FLV) terão mais probabilidade de venda de acordo com o clima e sazonalidade, buscando evitar prejuízo para a área. 
+As causas dessas grandes perdas estão ligadas a diversos fatores como furtos, erros administrativos, equívoco na compra de produtos em grandes quantidades, exposição de produtos nas lojas, falta de estimativa de quais produtos serão consumidos de acordo com o clima ou sazonalidade. Diante do exposto o grupo pensou em criar uma aplicação que possa trabalhar com diferentes grupos de usuários que poderam negociar entre eles os produtos que estarão disponíveis compra/venda. O pagamento será realizado pela própria plataforma e só será repassado para o vendendor uma vez que o comprador confirmar o recebimento dos produtos. Nossa platarforma enviará mala direta para os usuários baseado em dados estatísticos será criado uma interface com API de clima para mensurar de forma mais assertivas quais FLV (fruta, legumes e verduras) terão mais probabilidade de venda de acordo com o clima e sazonalidade, buscando evitar prejuízo para a área. 
 
 
 ## Integrantes
