@@ -23,10 +23,10 @@ Para a organização da equipe, gestão de tempo e controle de tarefas a equipe 
 ### Divisão de Papéis
 
 A equipe está organizada da seguinte maneira:
- - Scrum Master: 
- - Product Owner: 
- - Equipe de Desenvolvimento:
- - Equipe de Design:
+ - Scrum Master: Vanessa Lima da Silva Chaves
+ - Product Owner: Felipe Gonçalves Sobrinho
+ - Equipe de Desenvolvimento: Erasmo Alves da Silva Junior
+ - Equipe de Design: Geovanne Marco Correa da Silva
 
 ### Ferramentas
 
