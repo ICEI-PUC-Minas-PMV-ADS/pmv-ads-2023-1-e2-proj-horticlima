@@ -13,8 +13,8 @@ Como foi possível observar, um dos problemas vivenciados pelos empresários que
 Portanto o grupo decidiu desenvolver uma aplicação para inibir esse desperdício, gerando uma interação entre diversos grupos de compradores e vendedores de verduras, legumes e frutas, provendo uma negociação entre eles, a fim de aproveitar a oportunidade de compra e venda até o último dia para consumo. A plataforma ainda enviará aos usuários cadastrados informações importantes sobre produtos em oferta, melhores condições de pagamento, produtos fresquinhos, além de informações ligadas ao clima e sazonalidade para aumentar a oportunidade de venda.
 
 Como objetivos específicos, podemos ressaltar:
-●	Identificar os produtos que serão cadastrados no sistema e prazo de maturação de cada um deles;
-●	Segmentar a aplicação para receber o cadastro de grupos de empresários de setores diferentes como produtores, lojas, restaurantes e fifo;
+#●	Identificar os produtos que serão cadastrados no sistema e prazo de maturação de cada um deles;
+#●	Segmentar a aplicação para receber o cadastro de grupos de empresários de setores diferentes como produtores, lojas, restaurantes e fifo;
 ●	Cadastrar estados e cidades brasileiras para os usuários se cadastrarem;
 ●	Interligar a plataforma com um aplicativo de clima, para gerar as informações de probabilidade de venda diariamente;
 ●	Mapear estatisticamente de acordo com as sazonalidades quais produtos vendem mais em determinada época;
