@@ -29,12 +29,11 @@ Como objetivos específicos, podemos ressaltar:
 ●	Criar regra de negócio impedindo que o usuário se cadastre em duas ou mais modalidades diferentes.
 
 ## Justificativa
+O prejuízo que as empresas têm e o descarte de diversos alimentos que acabam indo para o lixo ta se tornando cada vez mais evidente. Se pensarmos que hoje 5,8 milhões de pessoas no país são miseráveis e não têm o que comer, precisamos nos preocupar em fazer algo para mitigar esse triste cenário
 
-O grupo escolheu este tema, por ter um integrante que trabalhou na área e pode acompanhar diariamente, o prejuízo que as empresas têm e o descarte de diversos alimentos que muitas vezes, não há tempo hábil para ser doado e acabam indo para o lixo. Se pensarmos que hoje 5,8 milhões de pessoas no país são miseráveis e não têm o que comer, precisamos nos preocupar em fazer algo para mitigar essa triste estatística. 
-A ausência de recursos tecnológicos para o setor infelizmente faz contribuir com essa realidade, portanto em busca de um melhor aproveitamento desses produtos e redução de prejuízos estamos criando a aplicação
+A ausência de recursos tecnológicos para o setor infelizmente faz contribuir com essa realidade, portanto em busca de um melhor aproveitamento desses produtos e redução de prejuízos estamos criando um ecormmecer integrado com fornecedores, varejistas, lojas fifos e os demais grupos que fazem parte do processo.
  
 ## Público-Alvo
 
-Embora todas as pessoas possam se beneficiar de soluções isentas para se informarem, o foco desta aplicação é atender aos profissionais que trabalham na área de hortifruti com compra e venda desses produtos. 
+Apesar de beneficiar diversas pessoas no processo da produção até a mesa do consumidor. O projeto terá como público alvo medios e grandes supermecados, fifos, restaurantes, fornecedores.
 
-Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mulheres entre 20 e 60 anos que se encontram em oportunidades de trabalho que exigem constante atualização e que fazem uso frequente de computadores e dispositivos móveis com aplicação para automatizar processos, para se atualizarem com probabilidades que diferenciam na hora da compra.
