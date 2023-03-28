@@ -24,11 +24,11 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 
 ### Requisitos Funcionais
 
-![requesitosf](/docs/img/requesitosf.png)
+![Requeditos Funcionais](https://user-images.githubusercontent.com/114196258/228373959-e7f37019-8937-4280-8f15-d29b307f18dd.png)
 
 ### Requisitos não Funcionais
 
-![Diagrama](https://user-images.githubusercontent.com/114196258/226227002-b691911b-e520-4c4b-bedc-c9d22a907dfa.png)
+![Requesitos não funcionais](https://user-images.githubusercontent.com/114196258/228373635-7d702eaf-e420-4ddf-9d4d-a9ff678fd220.png)
 
 ### Restrições
 
