@@ -26,7 +26,9 @@ A equipe está organizada da seguinte maneira:
  - Scrum Master: Vanessa Lima da Silva Chaves
  - Product Owner: Felipe Gonçalves Sobrinho
  - Equipe de Desenvolvimento: Erasmo Alves da Silva Junior
+ -                            Daniel Jonathan
  - Equipe de Design: Geovanne Marco Correa da Silva
+ -                   Daniel Jhonatan
 
 ### Ferramentas
 
