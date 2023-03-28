@@ -15,11 +15,17 @@ Portanto o grupo decidiu desenvolver uma aplicação para inibir esse desperdíc
 Como objetivos específicos, podemos ressaltar:
 
 ●	Identificar os produtos que serão cadastrados no sistema e prazo de maturação de cada um deles;
+
 ●	Segmentar a aplicação para receber o cadastro de grupos de empresários de setores diferentes como produtores, lojas, restaurantes e fifo;
+
 ●	Cadastrar estados e cidades brasileiras para os usuários se cadastrarem;
+
 ●	Interligar a plataforma com um aplicativo de clima, para gerar as informações de probabilidade de venda diariamente;
+
 ●	Mapear estatisticamente de acordo com as sazonalidades quais produtos vendem mais em determinada época;
+
 ●	Criar canais de interação entre produtores - lojas, loja - restaurantes e restaurantes - fifo;
+
 ●	Criar regra de negócio impedindo que o usuário se cadastre em duas ou mais modalidades diferentes.
 
 ## Justificativa
