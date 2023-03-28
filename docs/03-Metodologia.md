@@ -25,9 +25,9 @@ Para a organização da equipe, gestão de tempo e controle de tarefas a equipe 
 A equipe está organizada da seguinte maneira:
  - Scrum Master: Vanessa Lima da Silva Chaves
  - Product Owner: Felipe Gonçalves Sobrinho
- - Equipe de Desenvolvimento: Erasmo Alves da Silva Junior
+ - Equipe de Desenvolvimento: Erasmo Alves da Silva Junior <br />
                               Daniel Jonathan
- - Equipe de Design: Geovanne Marco Correa da Silva
+ - Equipe de Design: Geovanne Marco Correa da Silva <br />
                      Daniel Jhonatan
 
 ### Ferramentas
