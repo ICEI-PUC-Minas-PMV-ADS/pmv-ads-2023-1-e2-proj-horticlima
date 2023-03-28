@@ -2,7 +2,7 @@
 
 Umas das problemáticas que temos no setor de hortifrúti é a perda de alimentos, vendidos em grandes redes de varejo, atacado, restaurantes, de acordo com a HFBrasil estima-se uma perda avaliada em 2,26% aproximadamente 7 bilhões de reais anualmente (ou seja, isso significa metade do valor total da produção de frutas e hortaliças produzidas na roça).
 
-As causas dessas grandes perdas estão ligadas a diversos fatores como furtos, erros administrativos, equívoco na compra de produtos em grandes quantidades, exposição de produtos nas lojas, falta de estimativa de quais produtos serão consumidos de acordo com o clima ou sazonalidade. Diante do exposto o grupo pensou em criar uma aplicação que possa trabalhar com diferentes grupos de usuários que poderam negociar entre eles os produtos que estarão disponíveis compra/venda. O pagamento será realizado pela própria plataforma e só será repassado para o vendendor uma vez que o comprador confirmar o recebimento dos produtos. Nossa platarforma enviará mala direta para os usuários baseado em dados estatísticos será criado uma interface com API de clima para mensurar de forma mais assertivas quais FLV (fruta, legumes e verduras) terão mais probabilidade de venda de acordo com o clima e sazonalidade, buscando evitar prejuízo para a área. 
+As causas dessas grandes perdas estão ligadas a diversos fatores como furtos, erros administrativos, equívoco na compra de produtos em grandes quantidades, exposição de produtos nas lojas, falta de estimativa de quais produtos serão consumidos de acordo com o clima ou sazonalidade. Diante do exposto, o grupo pensou em criar uma aplicação que possa trabalhar com diferentes grupos de usuários que poderão negociar entre eles os produtos que estarão disponíveis para compra/venda. O pagamento será realizado pela própria plataforma e só será repassado para o vendedor uma vez que o comprador confirmar o recebimento dos produtos. Nossa plataforma enviará mala direta para os usuários baseado em dados estatísticos será criado uma interface com API de clima para mensurar de forma mais assertivas quais FLV (fruta, legumes e verduras) terão mais probabilidade de venda de acordo com o clima e sazonalidade, buscando evitar prejuízo para a área. 
  
 ## Problema
 
@@ -30,11 +30,11 @@ Como objetivos específicos, podemos ressaltar:
 
 ## Justificativa
 
-O grupo escolheu este tema, por ter um integrante que trabalhou na área e pode acompanhar diariamente, o prejuízo que as empresas tem e o descarte de diversos alimentos que muitas vezes, não há tempo hábil para ser doado e acabam indo para o lixo. Se pensarmos que hoje 5,8 milhões de pessoas no país são miseráveis e não tem o que comer, precisamos nos preocupar em fazer algo para mitigar essa triste estatística. 
+O grupo escolheu este tema, por ter um integrante que trabalhou na área e pode acompanhar diariamente, o prejuízo que as empresas têm e o descarte de diversos alimentos que muitas vezes, não há tempo hábil para ser doado e acabam indo para o lixo. Se pensarmos que hoje 5,8 milhões de pessoas no país são miseráveis e não têm o que comer, precisamos nos preocupar em fazer algo para mitigar essa triste estatística. 
 A ausência de recursos tecnológicos para o setor infelizmente faz contribuir com essa realidade, portanto em busca de um melhor aproveitamento desses produtos e redução de prejuízos estamos criando a aplicação
  
 ## Público-Alvo
 
-Embora todas as pessoas possam se beneficiar de soluções isentas para se informarem, o foco desta aplicação é atender aos profssionais que trabalham na área de hortifruti com compra e venda desses produtos. 
+Embora todas as pessoas possam se beneficiar de soluções isentas para se informarem, o foco desta aplicação é atender aos profissionais que trabalham na área de hortifruti com compra e venda desses produtos. 
 
 Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mulheres entre 20 e 60 anos que se encontram em oportunidades de trabalho que exigem constante atualização e que fazem uso frequente de computadores e dispositivos móveis com aplicação para automatizar processos, para se atualizarem com probabilidades que diferenciam na hora da compra.
