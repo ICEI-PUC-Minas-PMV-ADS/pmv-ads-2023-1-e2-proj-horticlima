@@ -38,7 +38,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ### Diagramas de casos de uso
 
-[docs/img/Caso de Uso produtores.png](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/blob/b4da2b43bf66aa9a22644b803a8e4b6111214fc5/docs/img/Caso%20de%20Uso%20produtores.png)
+[docs/img/Caso de Uso produtores.png]
 
 Vídeo Apresentação
 
