@@ -38,7 +38,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 ### Diagramas de casos de uso
 
-[docs/img/Caso de Uso produtores.png]
+![image](https://user-images.githubusercontent.com/114961595/228921623-f5db525b-06bc-4f7d-9fad-a1263c798a84.png)
 
 Vídeo Apresentação
 
