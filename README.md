@@ -17,7 +17,6 @@ As causas dessas grandes perdas estão ligadas a diversos fatores como furtos, e
  * Erasmo Alves da Silva Junior
  * Felipe Gonçalves Sobrinho
  * Geovanne Marco Correa da Silva
- * Tais Barros Santos
  * Vanessa Lima da Silva Chaves
 
 ## Orientador
