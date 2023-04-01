@@ -7,16 +7,17 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas na Figuras que se seguem.
 
+docs/img/Personas - Amanda Alves.png
+docs/img/Personas - Carlos Gomes.png
+docs/img/Personas - Juliana Siqueira.png
+docs/img/Personas - Carlos Eduardo.png
 
-![persona1](/docs/img/persona1.png)
-![persona2](/docs/img/persona2.png)
-![persona3](/docs/img/persona3.png)
 ## Histórias de Usuários
 
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 
-![history](/docs/img/history.png)
-
+docs/img/História de usuários atualizadas 1.png
+docs/img/História de usuários atualizadas 2.png
 
 ## Requisitos
 
@@ -24,17 +25,17 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 
 ### Requisitos Funcionais
 
-![Requeditos Funcionais](https://user-images.githubusercontent.com/114196258/228373959-e7f37019-8937-4280-8f15-d29b307f18dd.png)
+docs/img/Requesitos Funcionais.png
 
 ### Requisitos não Funcionais
 
-![Requesitos não funcionais](https://user-images.githubusercontent.com/114196258/228373635-7d702eaf-e420-4ddf-9d4d-a9ff678fd220.png)
+docs/img/Requesitos não funcionais.png
 
 ### Restrições
 
 As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
-![Restrições](https://user-images.githubusercontent.com/114196258/226227238-da07abd5-2b42-4690-840f-617f5531bf7d.png)
+docs/img/Restrições.png
 
 ### Diagramas de casos de uso
 
