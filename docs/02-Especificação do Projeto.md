@@ -7,17 +7,18 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas na Figuras que se seguem.
 
-docs/img/Personas - Amanda Alves.png
-docs/img/Personas - Carlos Gomes.png
-docs/img/Personas - Juliana Siqueira.png
-docs/img/Personas - Carlos Eduardo.png
+![Personas - Amanda Alves](https://user-images.githubusercontent.com/114196258/229258489-ae4a6b4e-6d47-4479-ac72-b6c39c47df58.png)
+![Personas - Carlos Gomes](https://user-images.githubusercontent.com/114196258/229258495-02a7ffb6-e132-4c79-8231-a4553acc662e.png)
+![Personas - Juliana Siqueira](https://user-images.githubusercontent.com/114196258/229258503-ea974849-b2de-4af6-ba17-3b6abd8b4fab.png)
+![Personas - Carlos Eduardo](https://user-images.githubusercontent.com/114196258/229258511-e93a0f8c-86b8-456e-8e40-9fb9a9eefc5e.png)
 
 ## Histórias de Usuários
 
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 
-docs/img/História de usuários atualizadas 1.png
-docs/img/História de usuários atualizadas 2.png
+![História de usuários atualizadas 1](https://user-images.githubusercontent.com/114196258/229258529-12fe29bb-5dca-4cd9-b683-74a96efa9dd5.png)
+![História de usuários atualizadas 2](https://user-images.githubusercontent.com/114196258/229258533-04ef35ab-89a1-4b84-bcc8-88995bac52cc.png)
+
 
 ## Requisitos
 
@@ -25,17 +26,17 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 
 ### Requisitos Funcionais
 
-docs/img/Requesitos Funcionais.png
+![Requesitos Funcionais](https://user-images.githubusercontent.com/114196258/229258544-c867a37a-3997-431b-92c4-b47911e0b387.png)
 
 ### Requisitos não Funcionais
 
-docs/img/Requesitos não funcionais.png
+![Requesitos não funcionais](https://user-images.githubusercontent.com/114196258/229258571-df6ba787-72e0-4e72-8d6b-2e2c524c64c2.png)
 
 ### Restrições
 
 As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
-docs/img/Restrições.png
+![Restrições](https://user-images.githubusercontent.com/114196258/229258590-d8566534-b890-4bd9-98cb-c4a0ed461167.png)
 
 ### Diagramas de casos de uso
 
