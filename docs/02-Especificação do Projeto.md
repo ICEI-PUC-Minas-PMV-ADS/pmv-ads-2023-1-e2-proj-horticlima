@@ -7,7 +7,7 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas na Figuras que se seguem.
 
-docs/img/Personas - Amanda Alves.png
+![docs/img/Personas - Amanda Alves.png]
 docs/img/Personas - Carlos Gomes.png
 docs/img/Personas - Juliana Siqueira.png
 docs/img/Personas - Carlos Eduardo.png
