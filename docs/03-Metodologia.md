@@ -38,6 +38,6 @@ As ferramentas empregadas no projeto são:
 
 - Respositório de Código Fonte: [Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-int-t2-pmv-ads-2023-1-e2-proj-int-t1-hort)
 - Documentos do projeto: [Google Docs](https://docs.google.com/document/d/1TydOzlbi3-F-FxSctTOichoCp6hWzN-E/edit?usp=sharing&ouid=112179464687955053878&rtpof=true&sd=true)
-- Projeto de Interface e Wireframes: []
+- Projeto de Interface e Wireframes: [Figma](https://www.figma.com/file/rzMPnOwh2L0sn468f585l1/HortClima?node-id=0-1&t=O3FuGW1uQEMBJ3a5-0)
 - Gerenciamento do Projeto: [Trello](https://trello.com/b/o2l70auJ/horticlima)
 
