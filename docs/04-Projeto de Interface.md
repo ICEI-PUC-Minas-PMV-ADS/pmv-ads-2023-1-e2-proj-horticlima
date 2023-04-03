@@ -9,7 +9,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Diagrama de Fluxo
 
-![image](https://user-images.githubusercontent.com/114961595/229501151-7cd00f44-845d-48fe-bae5-092aa742be2c.png)
+![image](https://user-images.githubusercontent.com/114961595/229511144-5a9afdfd-3892-458f-9024-078bdba13bf6.png)
 
 
 ## Wireframes
