@@ -16,7 +16,7 @@ Como objetivos específicos, podemos ressaltar:
 
 ●	Identificar os produtos que serão cadastrados no sistema e prazo de maturação de cada um deles;
 
-●	Segmentar a aplicação para receber o cadastro de grupos de empresários de setores diferentes como produtores, lojas, restaurantes e fifo;
+●	Segmentar a aplicação para receber o cadastro de grupos de empresários de setores diferentes como produtores, distribuidores, restaurantes e lojas de varejo;
 
 ●	Cadastrar estados e cidades brasileiras para os usuários se cadastrarem;
 
@@ -24,7 +24,7 @@ Como objetivos específicos, podemos ressaltar:
 
 ●	Mapear estatisticamente de acordo com as sazonalidades quais produtos vendem mais em determinada época;
 
-●	Criar canais de interação entre produtores - lojas, loja - restaurantes e restaurantes - fifo;
+●	Criar canais de interação entre produtores - distribuidores - restaurantes e lojas varejo;
 
 ●	Criar regra de negócio impedindo que o usuário se cadastre em duas ou mais modalidades diferentes.
 
@@ -35,5 +35,5 @@ A ausência de recursos tecnológicos para o setor infelizmente faz contribuir c
  
 ## Público-Alvo
 
-Apesar de beneficiar diversas pessoas no processo da produção até a mesa do consumidor. O projeto terá como público alvo medios e grandes supermecados, fifos, restaurantes, fornecedores.
+Apesar de beneficiar diversas pessoas no processo da produção até a mesa do consumidor. O projeto terá como público alvo produtores, distribuidores, restaurantes e lojas de varejo.
 
