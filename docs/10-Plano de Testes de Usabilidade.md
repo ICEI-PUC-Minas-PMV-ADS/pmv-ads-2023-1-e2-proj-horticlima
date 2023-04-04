@@ -1,12 +1,85 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+Os planos de testes de usabilidades serão aplicados de forma presencial, através de uma avaliação utilizando o método (SUS), com 10 perguntas específicas, os dados a serem coletados se dá pelo número de erros
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+## 1.	Eu acho que gostaria de usar esse sistema com frequência.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+## 2.	Eu acho o sistema desnecessariamente complexo.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+## 3.	Eu achei o sistema fácil de usar.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
+
+## 4.	Eu acho que precisaria de ajuda de uma pessoa com conhecimentos técnicos para usar o sistema.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
+
+## 5.	Eu acho que as várias funções do sistema estão muito bem integradas.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
+
+## 6.	Eu acho que o sistema apresenta muita inconsistência.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
+
+## 7.	Eu imagino que as pessoas aprenderão como usar esse sistema rapidamente.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
+
+## 8.	Eu achei o sistema atrapalhado de usar.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
+
+## 9.	Eu me senti confiante ao usar o sistema.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
+
+## 10.	Eu precisei aprender várias coisas novas antes de conseguir usar o sistema.
+a.    Discordo Completamente<br>
+b.    Discordo Parcialmente<br>
+c.    Não Concordo e Nem Discordo<br>
+d.    Concordo Parcialmente<br>
+e.    Concordo Completamente<br>
+
+
+
+
+
+
+
+
+
 
 > **Links Úteis**:
 > - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
