@@ -18,7 +18,7 @@ O nosso modelo ER demonstra a relação entre as entidades na nossa aplicação 
 
 No projeto de base de dados, as entidades e relacionamentos identificados no Modelo ER foram representados no formato de tabelas, com colunas e as chaves primárias/estrangeiras que representam as restrições de integridade.
 
-![image](/docs/BaseDeDados.png)
+![image](/docs/BaseDeDados.jpg)
 
 ## Tecnologias Utilizadas
 
