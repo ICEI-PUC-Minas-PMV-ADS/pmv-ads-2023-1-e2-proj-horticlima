@@ -6,23 +6,19 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-
 ![image](/docs/diagrama.png)
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER (Projeto Conceitual)
 
 O nosso modelo ER demonstra a relação entre as entidades na nossa aplicação interativa. No modelo usamos como base as estruturas de classe do diagrama de classe e seus atributos para construir as entidades. Mapeando as funcionabilidades foram então levantado os relacionamentos entre as entidades.
 
-![image](https://app.diagrams.net/#G1XectfCwB7hbaPDDHM5H2GLxcEA9gUAhd)
+![image](/docs/ModeloER.png)
 
 ## Projeto da Base de Dados
 
 No projeto de base de dados, as entidades e relacionamentos identificados no Modelo ER foram representados no formato de tabelas, com colunas e as chaves primárias/estrangeiras que representam as restrições de integridade.
 
-![image](https://drive.google.com/file/d/1hay4ktmh9LHQqKn7rL-XBDmtwVi6XAik/view?usp=sharing)
+![image](/docs/BaseDeDados.png)
 
 ## Tecnologias Utilizadas
 
