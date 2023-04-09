@@ -12,13 +12,13 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O nosso modelo ER demonstra a relação entre as entidades na nossa aplicação interativa. No modelo usamos como base as estruturas de classe do diagrama de classe e seus atributos para construir as entidades. Mapeando as funcionabilidades foram então levantado os relacionamentos entre as entidades.
 
-![image](/docs/ModeloER.png)
+![Modelo Entidade Relacionamento](/docs/img/ModeloER.png)
 
 ## Projeto da Base de Dados
 
 No projeto de base de dados, as entidades e relacionamentos identificados no Modelo ER foram representados no formato de tabelas, com colunas e as chaves primárias/estrangeiras que representam as restrições de integridade.
 
-![image](/docs/BaseDeDados.jpg)
+![Projeto Base de dados](/docs/img/BaseDeDados.jpg)
 
 ## Tecnologias Utilizadas
 
