@@ -39,7 +39,7 @@ A tela de login pede que o usuário informe as credenciais de acesso utilizadas 
 Tanto a tela de cadastro de usuário final quanto a de empresa pedem que o usuário insira as credenciais desejadas para que possa ser feito o cadastro em nosso banco de dados.
 
 ![Tela de Cadastro Usuário Empresa](/docs/img/Cadastro.png)
-![Tela de Cadastro Usuário Final](/docs/img/CadastroUsuarioFinal.png.png)
+![Tela de Cadastro Usuário Final](/docs/img/CadastroUsuarioFinal.png)
 
 <strong>Tela Estoque</strong>
 
