@@ -27,22 +27,35 @@ Barra de Pesquisa, utilizada para que usuário pesquise a fruta, verdura ou legu
 
 Já o bloco Conteúdo apresenta primeiramente três destaques em formato de Cards que sugerem que os fornecedores, atacado e varejo que se cadastrem, além de apresentar a fruta em oferta de acordo com o clima atual. Logo após, o bloco Conteúdo traz todas as frutas,legumes e verduras em catálogo.
 
-![Tela Home Page](https://user-images.githubusercontent.com/114536934/229933843-a8e4dfba-ec3b-4558-9d6f-459fdc9785a3.jpg)
+![Tela Home Page Logada](https://user-images.githubusercontent.com/114536934/230807097-fcf9de59-ff07-4dff-ae12-2cb6cb3bbba7.jpg)
+
 
 <strong>Tela de Login</strong>
 A tela de login pede que o usuário informe as credenciais de acesso utilizadas no cadastro do mesmo (CNPJ/CPF, Login e Senha).
 
-![Tela de Login](/docs/img/Login.png)
+![Tela de Login](https://user-images.githubusercontent.com/114536934/230808014-6bfd95ff-505d-4d2a-af59-d48841e0530a.jpg)
+
 
 <strong>Tela de Cadastro Usuário Final e Cliente Empresa</strong>
 
 Tanto a tela de cadastro de usuário final quanto a de empresa pedem que o usuário insira as credenciais desejadas para que possa ser feito o cadastro em nosso banco de dados.
 
-![Tela de Cadastro Usuário Empresa](/docs/img/Cadastro.png)
-![Tela de Cadastro Usuário Final](/docs/img/CadastroUsuarioFinal.png)
+![Tela de Cadastro Usuário Empresa](https://user-images.githubusercontent.com/114536934/230807833-f07a97ef-1bb9-4064-b3df-eb0111cb9f06.jpg)
+
+![Tela de Cadastro Usuário Final](https://user-images.githubusercontent.com/114536934/230807949-4ff366a2-af6e-4e8b-98a6-77b400abbb45.png)
+
 
 <strong>Tela Estoque</strong>
 
 Esta tela apresenta para o Usuário Empresa o estoque para que ele possa cadastrar os próprios produtos dentro da aplicação.
 
-![Tela Estoque](/docs/img/HomeEstoque.png)
+![Tela Estoque](https://user-images.githubusercontent.com/114536934/230807779-c573f93d-4ea7-40a2-ad92-7075cdd29813.jpg)
+
+
+<strong>Tela Cadastrar Produto</strong>
+
+Tela representativa de cadastro de produtos, sendo eles o estoque disponivel para venda.
+
+![Tela Cadastro Produto](https://user-images.githubusercontent.com/114536934/230807406-30aeb82e-2d45-416e-b155-cbf41d68409f.jpg)
+
+
