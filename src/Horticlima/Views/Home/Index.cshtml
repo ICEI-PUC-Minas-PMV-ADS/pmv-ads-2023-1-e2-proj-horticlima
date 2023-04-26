@@ -1,8 +1,42 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Eccomerce";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+        <div class="container justify-content-between bg-dark rounded-pill d-flex" style="height:2.5rem">
+            <div class="nav-link">
+                <a class="mr-3 text-white text-decoration-none" asp-controller="Home" asp-action="Index" asp-fragment="frutas">Frutas</a>
+                <a class="mr-3 text-white text-decoration-none" asp-controller="Home" asp-action="Index" asp-fragment="legumes">Legumes</a>
+                <a class="text-white text-decoration-none" asp-controller="Home" asp-action="Index" asp-fragment="verduras">Verduras</a>
+            </div>
+
+            <div class="nav-search">
+                <input type="search" name="search-input" placeholder="Buscar..." class="rounded-pill" style="border-style: none; outline: none;"/>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container d-flex mt-4 justify-content-between">
+        <div class="card border-dark" style="width: 33%">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <p class="card-text">Cadastre-se como fornecedor.</p>
+            </div>
+        </div>
+        <div class="card border-dark ml-3 mr-3" style="width: 33%">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <p class="card-text">Fruta em Oferta</p>
+            </div>
+        </div>
+        <div class="card border-dark" style="width: 33%">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <p class="card-text">Cadastre-se como Atacado/Varejo</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex mt-4">
+        <h4 id="frutas"> Frutas </h4>
+    </div>
 </div>
