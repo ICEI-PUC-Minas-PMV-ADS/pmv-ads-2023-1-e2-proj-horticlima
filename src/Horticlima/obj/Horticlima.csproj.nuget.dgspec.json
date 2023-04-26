@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\felip\\source\\repos\\Horticlima\\Horticlima.csproj": {}
+    "C:\\Users\\felip\\source\\repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {}
   },
   "projects": {
-    "C:\\Users\\felip\\source\\repos\\Horticlima\\Horticlima.csproj": {
+    "C:\\Users\\felip\\source\\repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\source\\repos\\Horticlima\\Horticlima.csproj",
+        "projectUniqueName": "C:\\Users\\felip\\source\\repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
         "projectName": "Horticlima",
-        "projectPath": "C:\\Users\\felip\\source\\repos\\Horticlima\\Horticlima.csproj",
+        "projectPath": "C:\\Users\\felip\\source\\repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
         "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\source\\repos\\Horticlima\\obj\\",
+        "outputPath": "C:\\Users\\felip\\source\\repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,24 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.17, )"
             }
