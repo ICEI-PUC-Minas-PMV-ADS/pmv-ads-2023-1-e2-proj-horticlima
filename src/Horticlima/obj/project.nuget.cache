@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RksStRMvidSuZEIeYsuvlcbwBGSnVvt1R7Rd+tljz7anruuBJHMSO++4CAJiUt4TSSYOIuVC3XZ6xQnhRW2eNQ==",
+  "dgSpecHash": "VlzerjqIXFpFy6ZfZ6928Cikx5tNkyI34oajPlR+jX2SvfUeaUZf2Gpq+PwBebvu066OLTh5yV0f6Ou4tIjmVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felip\\Source\\Repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
+  "projectFilePath": "C:\\Users\\felip\\source\\repos\\Horticlima\\src\\Horticlima\\Horticlima.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\felip\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.17\\microsoft.aspnetcore.mvc.razor.extensions.5.0.17.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.17\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.17.nupkg.sha512",
