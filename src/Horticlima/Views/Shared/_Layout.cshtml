@@ -9,12 +9,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light bg-white border-bottom box-shadow d-flex">
-            <div class="container">
+        <nav class="navbar container navbar-light bg-white border-bottom d-flex flex-nowrap">
+            <div class="container justify-content-lg-start">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Horticlima</a>
-                
-               <img class="menu-list" src="~/assets/list.svg" />
+                <a class="navbar-link text-dark pr-3" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                <a class="navbar-link text-dark" asp-area="" asp-controller="Produtos" asp-action="Index">Produtos</a>
             </div>
+                <img class="menu-list" src="~/assets/list.svg" />
         </nav>
     </header>
 
