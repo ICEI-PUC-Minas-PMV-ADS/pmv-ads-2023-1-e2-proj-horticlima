@@ -1,88 +1,47 @@
 # Plano de Testes de Usabilidade
 
-Os planos de testes de usabilidades serão aplicados de forma presencial, através de uma avaliação utilizando o método (SUS), com 10 perguntas específicas, os dados a serem coletados se dá pelo número de erros
+O teste de usabilidade tem como objetivo a verificação da funcionalidade da interface da plataforma. Isto é, o teste será realizado através de ferramentas que vão permitir o usuário à execução de determinadas tarefas. Dessa forma é possível obter uma análise de usabilidade e das principais dificuldades do sistema. Portanto, o teste tem como propósito garantir uma melhor experiência para o usuário.
 
-## 1.	Eu acho que gostaria de usar esse sistema com frequência.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
+O teste de usabilidade a ser realizado: Descoberta do Problema: Esse modelo de teste é o mais comum e tem como objetivo identificar problemas, isto é, o usuário deve buscar brechas e falhas assim revelando as incosistências da plataforma.
 
-## 2.	Eu acho o sistema desnecessariamente complexo.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
-
-## 3.	Eu achei o sistema fácil de usar.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
-
-## 4.	Eu acho que precisaria de ajuda de uma pessoa com conhecimentos técnicos para usar o sistema.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
-
-## 5.	Eu acho que as várias funções do sistema estão muito bem integradas.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
-
-## 6.	Eu acho que o sistema apresenta muita inconsistência.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
-
-## 7.	Eu imagino que as pessoas aprenderão como usar esse sistema rapidamente.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
-
-## 8.	Eu achei o sistema atrapalhado de usar.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
-
-## 9.	Eu me senti confiante ao usar o sistema.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
-
-## 10.	Eu precisei aprender várias coisas novas antes de conseguir usar o sistema.
-a.    Discordo Completamente<br>
-b.    Discordo Parcialmente<br>
-c.    Não Concordo e Nem Discordo<br>
-d.    Concordo Parcialmente<br>
-e.    Concordo Completamente<br>
+Nesse sentido, o teste irá usar usuários reais para execução de determinadas tarefas dentro da aplicação. O teste deve seguir de forma individual e por um avaliador afim de observar e coletar informações desses usuários selecionados em contato com a plataforma.
 
 
+## **Segue tabela com cada caso de teste**:
+#
+
+| **Caso de Teste** 	| **CT-01 – Responsividade**	|
+|:---:	|:---:	|
+|Requisito Associado | RNF-01	-A aplicação deverá ser responsiva permitindo a visualização em um celular de forma adequada. |
+| Objetivo do Teste 	| Verificar se o site possui responsividade nos disposivitos mobile e desktop. |
+| Passos 	| - Acessar URL em ambos dispositivos <br> - Navegar na plataforma e analisar desempenho.  |
+|Critério de Êxito | - Adaptação e responsividade do site para diferentes tamanhos de tela. |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-02 – Contraste e Design**	|
+|:---:	|:---:	|
+|Requisito Associado | RNF-02 A aplicação deve ter bom nível de contraste entre os elementos da tela e um design simples.  |
+| Objetivo do Teste 	| Verificar se o site possui um design simples e harmôico para o tema escolhido.
+| Passos 	| - Acessar o navegador <br> - Acessar a tela de login <br> -Verificar se o site possui clareza nas escritas de acordo com a palet de cores escolhida. |
+|Critério de Êxito | - Contraste e clareza nas informações contidas na página. |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-03 – Acesso Protegido** 
+|:---:	|:---:	|
+|Requisito Associado | RNF-03 A aplicação deve ser protegida contra acesso não autorizado. |
+| Objetivo do Teste 	| Verificar segurança de acesso. |
+| Passos 	| - Acessar o navegador <br> - Realizar login com um e-mail cadastrado <br> - Inserir outra senha para verificar se erro de usuario e senha será exibido. |
+|Critério de Êxito | - Negar acesso e indicar erro em caso de informações não verificadas. |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-04 – Linguagem** 
+|:---:	|:---:	|
+|Requisito Associado | RNF-04 O sistema deve ser implementado na linguagem C#. |
+|  	|  	|
+
+| **Caso de Teste** 	| **CT-05 – Banco de Dados** 
+|:---:	|:---:	|
+|Requisito Associado | RNF-05 O sistema deverá se comunicar com o banco SQL Server. |
+|  	|  	|
 
 
-
-
-
-
-
-
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
