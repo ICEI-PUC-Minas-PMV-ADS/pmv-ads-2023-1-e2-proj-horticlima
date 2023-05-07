@@ -4,9 +4,9 @@
 Critério de êxito - O cadastro foi realizado com sucesso. <br>
 ![image](/docs/img/CadastroUsuario.png) <br>
 
-CT-02 - Cadastro de Produtos <br>
-Critério de êxito - O cadastro e alterações nos produtos foram realizados com sucesso.** <br>
-![image](/docs/img/CadastroProdutos.png) <br>
+<strong> CT-02 - Cadastro de Produtos <br>
+Critério de êxito - O cadastro e alterações nos produtos foram realizados com sucesso. </strong>
+![image](/docs/img/CadastroProdutos.png)
 
 ## Avaliação
 
