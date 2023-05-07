@@ -1,7 +1,7 @@
 # Registro de Testes de Software
 
 CT-01 - Cadastro de Usuários
-![image](docs/img/CadastroUsuario.png)
+![image](/docs/img/CadastroUsuario.png)
 
 CT-02 - Cadastro de Produtos e Gerentes
 ![image](docs/img/CadastroProdutos.png)
