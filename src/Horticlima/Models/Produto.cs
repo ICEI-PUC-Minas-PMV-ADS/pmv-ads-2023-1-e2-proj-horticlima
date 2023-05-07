@@ -16,7 +16,6 @@ namespace Horticlima.Models
         [Required(ErrorMessage = "Informe a descrição do produto")]
         public string ProdutoDescricao { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório informar a imagem do produto!")]
         public string ProdutoImagemURL { get; set; }
 
         [NotMapped]

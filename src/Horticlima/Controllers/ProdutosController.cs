@@ -53,9 +53,9 @@ namespace Horticlima.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProdutoId,ProdutoNome,ProdutoDescricao,ProdutoImagemURL,Preco,Categoria")] Produto produto)
+        public async Task<IActionResult> Create([Bind("ProdutoId,ProdutoNome,ProdutoImagemURL,ProdutoDescricao,Preco,Categoria")] Produto produto)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 _context.Add(produto);
                 await _context.SaveChangesAsync();
@@ -92,7 +92,7 @@ namespace Horticlima.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 try
                 {

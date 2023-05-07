@@ -4,56 +4,63 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="text-center">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+        <div class="container justify-content-between bg-dark rounded-pill d-flex" style="height:2.5rem">
+            <div class="nav-link">
+                <a class="mr-3 text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="frutas">Frutas</a>
+                <a class="mr-3 text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="legumes">Legumes</a>
+                <a class="text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="verduras">Verduras</a>
+            </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ProdutoNome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProdutoDescricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProdutoImagemURL)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preco)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Categoria)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProdutoNome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProdutoDescricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProdutoImagemURL)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categoria)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ProdutoId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProdutoId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProdutoId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+            <div class="nav-search">
+                <input type="search" name="search-input" placeholder="Buscar..." class="rounded-pill" style="border-style: none; outline: none;" />
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex mt-4 justify-content-between">
+        <div class="card border-dark" style="width: 33%">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <p class="card-text">Cadastre-se como fornecedor.</p>
+            </div>
+        </div>
+        <div class="card border-dark ml-3 mr-3" style="width: 33%">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <p class="card-text">Fruta em Oferta</p>
+            </div>
+        </div>
+        <div class="card border-dark" style="width: 33%">
+            <div class="card-body align-items-center d-flex justify-content-center">
+                <p class="card-text">Cadastre-se como Atacado/Varejo</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="mt-4 mb-4"> Frutas </h1>
+<div class="container d-flex justify-content-between">
+    @foreach (var item in Model)
+    {
+        <div class="card" style="width: 20%">
+            <img src="@item.ProdutoImagemURL" width"10%" alt="@item.ProdutoNome" />
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="17px" /> R$ @Html.DisplayFor(modelItem => item.Preco)</a>
+                </div>
+                <div>
+                    <a asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<a class="btn btn-primary" asp-action="Create">Criar novo Produto</a>
+
+              
+
