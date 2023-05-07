@@ -1,12 +1,13 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+CT-01 - Cadastro de Usuários
+![image](docs/img/CadastroUsuario.png)
 
-Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
+CT-02 - Cadastro de Produtos e Gerentes
+![image](docs/img/CadastroProdutos.png)
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+CT-01: O sisteme cumpre o critério de êxito, porém ainda não possui o botão "Criar Conta ou Registrar-se" e não possui nenhuma forma de Autorização e Autenticação.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+CT-02: O sistema cumpre o critério de exîto, porém ainda não possui nenhuma forma de Autorização e Autenticação para diferenciar um Usuário Comum e um Usuário Gerente.
