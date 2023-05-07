@@ -4,7 +4,7 @@ CT-01 - Cadastro de Usuários
 ![image](/docs/img/CadastroUsuario.png)
 
 CT-02 - Cadastro de Produtos e Gerentes
-![image](docs/img/CadastroProdutos.png)
+![image](/docs/img/CadastroProdutos.png)
 
 ## Avaliação
 
