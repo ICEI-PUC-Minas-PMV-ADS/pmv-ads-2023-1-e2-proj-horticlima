@@ -9,13 +9,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar container navbar-light bg-white border-bottom d-flex flex-nowrap">
+        <nav class="navbar container navbar-light bg-white border-bottom d-flex flex-nowrap align-items-center">
             <div class="container justify-content-lg-start">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Horticlima</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Produtos" asp-action="Index">Horticlima</a>
                 <a class="navbar-link text-dark pr-3" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
-                <a class="navbar-link text-dark" asp-area="" asp-controller="Produtos" asp-action="Index">Produtos</a>
             </div>
-                <img class="menu-list" src="~/assets/list.svg" />
+            <a asp-controller="Carrinhos" asp-action="Index"> <img src="~/assets/carrinho.svg" style="width: 17px; cursor: pointer;" asp-controller="Carrinhos" asp-action="Index"/> </a>
+            <img class="menu-list ml-4"  src="~/assets/list.svg" />
         </nav>
     </header>
 
@@ -24,10 +24,6 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
