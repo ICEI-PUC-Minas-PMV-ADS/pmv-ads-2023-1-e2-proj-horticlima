@@ -2,4 +2,4 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-![image](/docs/TemplatePadrãoTeste.png)
+![image](/docs/img/TemplatePadrãoTeste.png)
