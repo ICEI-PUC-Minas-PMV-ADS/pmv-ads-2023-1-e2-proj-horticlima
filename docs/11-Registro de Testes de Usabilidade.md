@@ -1,8 +1,11 @@
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+**CT-01 – Responsividade**
+Critério de Êxito - Adaptação e responsividade do site para diferentes tamanhos de tela.
+![image](/docs/img/Responsivo.png)
+Avaliação - A aplicação ainda não está completamente responsiva e ainda precisa de alguns ajustes.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
-
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+**CT-2 - Contraste e Design**
+Critério de Êxito - Contraste e clareza nas informações contidas na página.
+![image](/docs/img/TemplatePadrãoTeste.png)
+Avaliação - A aplicação possui clareza nas informações porém ainda não possui uma identidade visual única.
