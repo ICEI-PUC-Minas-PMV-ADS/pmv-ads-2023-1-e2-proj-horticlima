@@ -1,9 +1,11 @@
 # Registro de Testes de Software
 
-**CT-01 - Cadastro de Usuários**
+**CT-01 - Cadastro de Usuários**</br>
+** Critério de êxito - O cadastro foi realizado com sucesso.**
 ![image](/docs/img/CadastroUsuario.png)
 
-**CT-02 - Cadastro de Produtos e Gerentes**
+** CT-02 - Cadastro de Produtos e Gerentes **</br>
+** Critério de êxito - - Os cadastros e alterações nos produtos foram realizados com sucesso.**
 ![image](/docs/img/CadastroProdutos.png)
 
 ## Avaliação
