@@ -18,6 +18,13 @@ namespace Horticlima.Controllers
             _context = context;
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+
+
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
@@ -57,6 +64,7 @@ namespace Horticlima.Controllers
         {
             if (ModelState.IsValid)
             {
+                usuario.UsuarioSenha = BCrypt.Net.BCrypt.HashPassword(usuario.UsuarioSenha);
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,6 +104,7 @@ namespace Horticlima.Controllers
             {
                 try
                 {
+                    usuario.UsuarioSenha = BCrypt.Net.BCrypt.HashPassword(usuario.UsuarioSenha);
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
