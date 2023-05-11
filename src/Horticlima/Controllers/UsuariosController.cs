@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Horticlima.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Horticlima.Controllers
 {
@@ -23,6 +25,52 @@ namespace Horticlima.Controllers
             return View();
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Login([Bind("UsuarioId, UsuarioSenha")] Usuario usuario)
+        {
+            var user = await _context.Usuarios
+                .FirstOrDefaultAsync(m => m.UsuarioId == usuario.UsuarioId);
+
+            if (user == null)
+            {
+                ViewBag.Message = "Usuário e/ou senha inválido!";
+                return View();
+            }
+
+            bool isSenhaOk = BCrypt.Net.BCrypt.Verify(usuario.UsuarioSenha, user.UsuarioSenha);
+
+            if (isSenhaOk)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user.UsuarioNome),
+                    new Claim(ClaimTypes.NameIdentifier, user.UsuarioNome!),
+                    new Claim(ClaimTypes.Role, user.Perfil.ToString()),
+                };
+
+                var userIdentity = new ClaimsIdentity(claims, "login");
+
+                ClaimsPrincipal principal = new(userIdentity);
+
+                var props = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    IsPersistent = true,
+                    ExpiresUtc = DateTime.Now.ToLocalTime().AddDays(7),
+                };
+
+                await HttpContext.SignInAsync(principal, props);
+
+                return Redirect("/Produtos");
+            }
+
+            return View();
+        }
+
+        public IActionResult AcessDenied()
+        {
+            return View();
+        }
 
 
         // GET: Usuarios

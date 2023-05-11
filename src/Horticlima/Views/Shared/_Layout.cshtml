@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,13 +12,23 @@
 <body>
     <header>
         <nav class="navbar container navbar-light bg-white border-bottom d-flex flex-nowrap align-items-center">
-            <div class="container justify-content-lg-start">
+            <div class="d-flex align-items-center justify-content-center">
                 <a class="navbar-brand" asp-area="" asp-controller="Produtos" asp-action="Index">Horticlima</a>
                 <a class="navbar-link text-dark pr-3" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
             </div>
-            <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="Login"> Login </a>
-            <a asp-controller="Carrinhos" asp-action="Index"> <img src="~/assets/carrinho.svg" style="width: 17px; cursor: pointer;" asp-controller="Carrinhos" asp-action="Index"/> </a>
-            <img class="menu-list ml-4"  src="~/assets/list.svg" />
+            <div class="d-flex align-items-center justify-content-center">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <h5 class="nav-item pr-4 m-0"> Olá, @User.Identity.Name </h5>
+                }
+                else
+                {
+                    <a class="btn btn-primary text-dark" asp-controller="Usuarios" asp-action="Login"> Login </a>
+                }
+                <a asp-controller="Carrinhos" asp-action="Index"> <img src="~/assets/carrinho.svg" style="width: 17px; cursor: pointer;" asp-controller="Carrinhos" asp-action="Index" /> </a>
+                <img class="menu-list ml-4" src="~/assets/list.svg" />
+            </div>
+            
         </nav>
     </header>
 
