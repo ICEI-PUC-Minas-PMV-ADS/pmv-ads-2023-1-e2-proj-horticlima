@@ -34,7 +34,7 @@ namespace Horticlima.Models
     public enum Categoria
     {
         Frutas,
-        Veduras,
+        Verduras,
         Legumes
     }
 }

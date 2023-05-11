@@ -19,9 +19,16 @@ namespace Horticlima.Controllers
         }
 
         // GET: Produtos
-        public async Task<IActionResult> Index()
+        public IActionResult Index(string SearchString)
         {
-            return View(await _context.Produtos.ToListAsync());
+            ViewData["CurrentFilter"] = SearchString;
+            var produtos = from produto in _context.Produtos
+                           select produto;
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                produtos = produtos.Where(produto => produto.ProdutoNome.Contains(SearchString));
+            }
+            return View(produtos);
         }
 
         // GET: Produtos/Details/5
