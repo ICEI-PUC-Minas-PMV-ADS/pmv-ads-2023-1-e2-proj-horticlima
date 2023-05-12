@@ -1,42 +1,46 @@
 ﻿@model Horticlima.Models.Usuario
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastro";
 }
 
-<h1>Create</h1>
-
-<h4>Usuário</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="UsuarioNome" class="control-label"></label>
-                <input asp-for="UsuarioNome" class="form-control" />
-                <span asp-validation-for="UsuarioNome" class="text-danger"></span>
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <form asp-action="Create" class="card-body p-5 text-center">
+                        <div class="mb-md-3 mt-md-3 pb-3">
+                            <h1>Horticlima</h1>
+                            <p class="text-white-50 mb-4">Favor inserir o usuário e senha!</p>
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="UsuarioNome" class="control-label"> Nome </label>
+                                <input asp-for="UsuarioNome" placeholder="Insira o nome de usuário" class="form-control" />
+                                <span asp-validation-for="UsuarioNome" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="CPF" class="control-label"> CPF </label>
+                                <input placeholder="Insira o CPF" asp-for="CPF" class="form-control" />
+                                <span asp-validation-for="CPF" class="text-danger"></span>
+                            </div>
+                            <div class="form-group pb-2">
+                                <label asp-for="UsuarioSenha" class="control-label"> Senha </label>
+                                <input placeholder="Insira a senha" asp-for="UsuarioSenha" class="form-control" />
+                                <span asp-validation-for="UsuarioSenha" class="text-danger"></span>
+                            </div>
+                            <h5 class="pb-3 text-danger"> @ViewBag.Message </h5>
+                            <div class="form-group">
+                                <input class="btn btn-outline-light btn-lg rounded-pill px-5" type="submit" value="Cadastrar" />
+                            </div>
+                            <a class="btn btn-danger rounded-pill px-3" asp-controller="Produtos" asp-action="Index">Voltar</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="UsuarioSenha" class="control-label"></label>
-                <input asp-for="UsuarioSenha" class="form-control" />
-                <span asp-validation-for="UsuarioSenha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Perfil" class="control-label"></label>
-                <select asp-for="Perfil" class="form-control"  asp-items="Html.GetEnumSelectList<Perfil>()"></select>
-                <span asp-validation-for="Perfil" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+</section>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -10,13 +10,31 @@
 <body>
     <header>
         <nav class="navbar container navbar-light bg-white border-bottom d-flex flex-nowrap align-items-center">
-            <div class="container justify-content-lg-start">
-                <a class="navbar-brand" asp-area="" asp-controller="Produtos" asp-action="Index">Horticlima</a>
-                <a class="navbar-link text-dark pr-3" asp-area="" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+            <div class="d-flex align-items-center justify-content-center">
+                <a class="navbar-brand" asp-controller="Produtos" asp-action="Index">Horticlima</a>
+                @if (User.IsInRole("Admin"))
+                {
+                    <a class="btn btn-outline-danger rounded-pill mx-3" asp-controller="Usuarios" asp-action="Index"> Gerenciar Usuarios</a>
+                }
+                @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || User.IsInRole("Gerente")))
+                {
+                    <a class="btn btn-outline-danger rounded-pill px-3" asp-controller="Produtos" asp-action="Management">Gerenciar Produtos</a>
+                }
             </div>
-            <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="Login"> Login </a>
-            <a asp-controller="Carrinhos" asp-action="Index"> <img src="~/assets/carrinho.svg" style="width: 17px; cursor: pointer;" asp-controller="Carrinhos" asp-action="Index"/> </a>
-            <img class="menu-list ml-4"  src="~/assets/list.svg" />
+            <div class="d-flex align-items-center justify-content-center">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <h5 class="nav-item m-0"> Olá, @User.Identity.Name </h5>
+                    <a class="btn btn-danger text-white rounded-pill ml-3 px-3" asp-area="" asp-controller="Usuarios" asp-action="Logout"> Logout </a>
+                }
+                else
+                {
+                    <a class="btn btn-danger text-white rounded-pill ml-3 px-3" asp-controller="Usuarios" asp-action="Login"> Login </a>
+                }
+                <a asp-controller="Carrinhos" asp-action="Index"> <img src="~/assets/carrinho.svg" class="mx-3" style="width: 17px; cursor: pointer;" asp-controller="Carrinhos" asp-action="Index" /> </a>
+                <img class="menu-list" src="~/assets/list.svg" />
+            </div>
+            
         </nav>
     </header>
 

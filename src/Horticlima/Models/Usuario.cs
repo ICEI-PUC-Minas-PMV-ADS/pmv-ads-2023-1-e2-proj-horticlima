@@ -10,7 +10,6 @@ namespace Horticlima.Models
     [Table("Usuarios")]
     public class Usuario
     {
-
         [Key]
         public int UsuarioId { get; set; }
 
@@ -21,13 +20,19 @@ namespace Horticlima.Models
         [DataType(DataType.Password)]
         public string UsuarioSenha { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório informar o Perfil de Sistema!")]
+        public string CPF { get; set; }
+
+        public string CNPJ { get; set; }
+
         public Perfil Perfil { get; set; }
     }
 
     public enum Perfil
     {
         Admin,
+        Gerente,
         User
     }
+
+    
 }

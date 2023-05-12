@@ -28,11 +28,11 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ProdutoImagemURL)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Preco)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Preco)
+        <dd class="col-sm-10">
+            R$ @Html.DisplayFor(model => model.Preco),00
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Categoria)
@@ -43,6 +43,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.ProdutoId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-outline-info rounded-pill px-3"asp-action="Edit" asp-route-id="@Model.ProdutoId">Editar</a>
 </div>
+    <a class="btn btn-outline-danger rounded-pill px-3 my-3" asp-action="Management">Voltar</a>
