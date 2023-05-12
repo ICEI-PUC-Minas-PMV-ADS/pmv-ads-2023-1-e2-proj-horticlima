@@ -18,14 +18,8 @@ namespace Horticlima.Models
 
         public string ProdutoImagemURL { get; set; }
 
-        [NotMapped]
-        [Display(Name = "Escolha o arquivo de imagem do produto")]
-        [Required]
-        public IFormFile ProdutoImagemArquivo { get; set; }
-
         [Required(ErrorMessage = "Obrigatório informar o preço o produto!")]
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal Preco { get; set; }
+        public int Preco { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a categoria do produto!")]
         public Categoria Categoria { get; set; }

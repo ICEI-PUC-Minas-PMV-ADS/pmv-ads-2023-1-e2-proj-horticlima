@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Horticlima.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Horticlima.Controllers
 {
+    [Authorize(Roles = "Admin, Gerente")]
     public class ProdutosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -18,6 +20,20 @@ namespace Horticlima.Controllers
             _context = context;
         }
 
+        // GET: Produtos
+        public IActionResult Management(string SearchString)
+        {
+            ViewData["CurrentFilter"] = SearchString;
+            var produtos = from produto in _context.Produtos
+                           select produto;
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                produtos = produtos.Where(produto => produto.ProdutoNome.Contains(SearchString));
+            }
+            return View(produtos);
+        }
+
+        [AllowAnonymous]
         // GET: Produtos
         public IActionResult Index(string SearchString)
         {

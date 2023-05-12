@@ -12,83 +12,67 @@
             <div class="nav-link">
                 <a class="mr-3 text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="Frutas">Frutas</a>
                 <a class="mr-3 text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="Legumes">Legumes</a>
-                <a class="text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="Verduras">Verduras</a>
-                <a class="btn btn-primary" asp-action="Create">Criar novo Produto</a>
+                <a class="mr-3 text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="Verduras">Verduras</a>
             </div>
 
             <form asp-action="Index" method="get">
                 <input type="search" placeholder="Buscar..." name="SearchString" value="@ViewData["CurrentFilter"]">
-                <button type="submit" >
+                <button type="submit">
                 </button>
-
             </form>
         </div>
     </nav>
-
-    <div class="container d-flex mt-4 justify-content-between">
-        <div class="card border-dark" style="width: 33%">
-            <div class="card-body align-items-center d-flex justify-content-center">
-                <p class="card-text">Cadastre-se como fornecedor.</p>
-            </div>
+    @if (User.Identity.IsAuthenticated == false)
+    {
+        <div class="container d-flex mt-4 align-items-center justify-content-around">
+            <a asp-controller="Usuarios" asp-action="CreateManager" class="card border-dark" style="width: 45%; height: 50vh; background-image: url('/assets/bannerimg2.png'); background-size:cover;">
+                <div class="card-body">
+                    <h3 class="card-text text-black">Cadastre-se como fornecedor</h3>
+                </div>
+            </a>
+            <h4 class="px-2"> Ou então </h4>
+            <a asp-controller="Usuarios" asp-action="Create" class="card border-dark" style="width: 45%; height: 50vh; background-image: url('/assets/bannerimg4.png'); background-size:cover;">
+                <div class="card-body">
+                    <h3 class="card-text text-black">Cadastre-se</h3>
+                </div>
+            </a>
         </div>
-        <div class="card border-dark ml-3 mr-3" style="width: 33%">
-            <div class="card-body align-items-center d-flex justify-content-center">
-                <p class="card-text">Fruta em Oferta</p>
-            </div>
-        </div>
-        <div class="card border-dark" style="width: 33%">
-            <div class="card-body align-items-center d-flex justify-content-center">
-                <p class="card-text">Cadastre-se como Atacado/Varejo</p>
-            </div>
-        </div>
-    </div>
+    }
 </div>
-
 <div class="container d-flex flex-column">
     <a name="Frutas"> <h2 class="mt-4 mb-4"> Frutas </h2> </a>
-    <div class="container d-flex">
+    <div class="container d-flex flex-wrap">
         @foreach (var item in Model)
         {
             @if (item.Categoria == Categoria.Frutas)
             {
-                <div class="card" style="width: 20%">
-                    <img src="@item.ProdutoImagemURL" width"10%" alt="@item.ProdutoNome" />
+                <div class="card mb-3 mr-3" style="width: 23%">
+                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
                     <div class="card-body">
                         <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
                         <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="17px" /> R$ @Html.DisplayFor(modelItem => item.Preco)</a>
-                        </div>
-                        <div>
-                            <a asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
-                            <a asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
-                            <a asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" /> R$ @Html.DisplayFor(modelItem => item.Preco),00</a>
                         </div>
                     </div>
                 </div>
             }
         }
     </div>
-
     <a name="Legumes"> <h2 class="mt-4 mb-4"> Legumes </h2> </a>
-    <div class="container d-flex">
+    <div class="container d-flex flex-wrap">
         @foreach (var item in Model)
         {
             @if (item.Categoria == Categoria.Legumes)
             {
 
-                <div class="card" style="width: 20%">
-                    <img src="@item.ProdutoImagemURL" width"10%" alt="@item.ProdutoNome" />
+                <div class="card mb-3 mr-3" style="width: 20%">
+                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
                     <div class="card-body">
                         <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
                         <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="17px" /> R$ @Html.DisplayFor(modelItem => item.Preco)</a>
-                        </div>
-                        <div>
-                            <a asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
-                            <a asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
-                            <a asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" /> R$ @Html.DisplayFor(modelItem => item.Preco),00</a>
                         </div>
                     </div>
                 </div>
@@ -96,27 +80,20 @@
 
         }
     </div>
-
-
     <a name="Verduras"> <h2 class="mt-4 mb-4"> Verduras </h2> </a>
-    <div class="container d-flex">
+    <div class="container d-flex flex-wrap">
         @foreach (var item in Model)
         {
             @if (item.Categoria == Categoria.Verduras)
             {
 
-                <div class="card" style="width: 20%">
-                    <img src="@item.ProdutoImagemURL" width"10%" alt="@item.ProdutoNome" />
+                <div class="card mb-3 mr-3" style="width: 20%">
+                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
                     <div class="card-body">
                         <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
                         <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="17px" /> R$ @Html.DisplayFor(modelItem => item.Preco)</a>
-                        </div>
-                        <div>
-                            <a asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
-                            <a asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
-                            <a asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" /> R$ @Html.DisplayFor(modelItem => item.Preco),00</a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,111 @@
+﻿@model IEnumerable<Horticlima.Models.Produto>
+
+@{
+    ViewData["Title"] = "Management";
+}
+
+<h1>Gerenciamento de Produtos</h1>
+
+<a class="btn btn-danger rounded-pill px-3 my-3" asp-action="Create">Criar novo Produto</a>
+
+<link rel="stylesheet" href="~/css/ProdutosIndex.css" />
+
+<div class="text-center">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
+        <div class="container justify-content-between bg-dark rounded-pill d-flex" style="height:2.5rem">
+            <div class="nav-link">
+                <a class="mr-3 text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="Frutas">Frutas</a>
+                <a class="mr-3 text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="Legumes">Legumes</a>
+                <a class="mr-3 text-white text-decoration-none" asp-controller="Produtos" asp-action="Index" asp-fragment="Verduras">Verduras</a>
+            </div>
+
+            <form asp-action="Management" method="get">
+                <input type="search" placeholder="Buscar..." name="SearchString" value="@ViewData["CurrentFilter"]">
+                <button type="submit">
+                </button>
+            </form>
+        </div>
+    </nav>
+</div>
+
+<div class="container d-flex flex-column">
+    <a name="Frutas"> <h2 class="mt-4 mb-4"> Frutas </h2> </a>
+    <div class="container d-flex flex-wrap">
+        @foreach (var item in Model)
+        {
+            @if (item.Categoria == Categoria.Frutas)
+            {
+                <div class="card mb-3 mr-3" style="width: 30%">
+                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
+                    <div class="card-body">
+                        <p class="card-title"><strong>Nome:</strong> @Html.DisplayFor(modelItem => item.ProdutoNome)</p>
+                        <p class="card-text"><strong>Descrição:</strong> @Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
+                        <p class="card-text"><strong>Preço:</strong> R$ @Html.DisplayFor(modelItem => item.Preco),00</p>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <div class="d-flex justify-content-between mt-2">
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <a name="Legumes"> <h2 class="mt-4 mb-4"> Legumes </h2> </a>
+    <div class="container d-flex flex-wrap">
+        @foreach (var item in Model)
+        {
+            @if (item.Categoria == Categoria.Legumes)
+            {
+
+                <div class="card mb-3 mr-3" style="width: 30%">
+                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
+                    <div class="card-body">
+                        <p class="card-title"><strong>Nome:</strong> @Html.DisplayFor(modelItem => item.ProdutoNome)</p>
+                        <p class="card-text"><strong>Descrição:</strong> @Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
+                        <p class="card-text"><strong>Preço:</strong> R$ @Html.DisplayFor(modelItem => item.Preco),00</p>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <div class="d-flex justify-content-between mt-2">
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+
+        }
+    </div>
+    <a name="Verduras"> <h2 class="mt-4 mb-4"> Verduras </h2> </a>
+    <div class="container d-flex flex-wrap">
+        @foreach (var item in Model)
+        {
+            @if (item.Categoria == Categoria.Verduras)
+            {
+                <div class="card mb-3 mr-3" style="width: 30%">
+                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
+                    <div class="card-body">
+                        <p class="card-title"><strong>Nome:</strong> @Html.DisplayFor(modelItem => item.ProdutoNome)</p>
+                        <p class="card-text"><strong>Descrição:</strong> @Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
+                        <p class="card-text"><strong>Preço:</strong> R$ @Html.DisplayFor(modelItem => item.Preco),00</p>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <div class="d-flex justify-content-between mt-2">
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
+                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+
+</div>

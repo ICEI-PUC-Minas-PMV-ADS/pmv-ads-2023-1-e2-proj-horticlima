@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Horticlima.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Horticlima.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class UsuariosController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,16 +22,18 @@ namespace Horticlima.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Login([Bind("UsuarioId, UsuarioSenha")] Usuario usuario)
+        public async Task<IActionResult> Login([Bind("UsuarioNome, UsuarioSenha")] Usuario usuario)
         {
             var user = await _context.Usuarios
-                .FirstOrDefaultAsync(m => m.UsuarioId == usuario.UsuarioId);
+                .FirstOrDefaultAsync(m => m.UsuarioNome == usuario.UsuarioNome);
 
             if (user == null)
             {
@@ -62,11 +66,19 @@ namespace Horticlima.Controllers
                 await HttpContext.SignInAsync(principal, props);
 
                 return Redirect("/Produtos");
+            } else {
+                ViewBag.Message = "Usuário e/ou senha inválido!";
+                return View();
             }
-
-            return View();
         }
 
+        [AllowAnonymous]
+        public async Task<IActionResult> Logout(){
+            await HttpContext.SignOutAsync();
+            return Redirect("/Produtos");
+        }
+
+        [AllowAnonymous]
         public IActionResult AcessDenied()
         {
             return View();
@@ -97,6 +109,68 @@ namespace Horticlima.Controllers
             return View(usuario);
         }
 
+        // NAME, CPF AND CNPJ VERIFICATION
+        private bool NameAlredyExist(string UsuarioNome)
+        {
+            var usuario = _context.Usuarios
+                .FirstOrDefault(u => u.UsuarioNome == UsuarioNome);
+
+            return usuario != null;
+        }
+
+        private bool CpfAlredyExist(string cpf)
+        {
+            var usuario = _context.Usuarios.FirstOrDefault(u => u.CPF == cpf);
+
+            return usuario != null;
+        }
+
+        private bool CnpjAlredyExist(string cnpj)
+        {
+            var usuario = _context.Usuarios.FirstOrDefault(u => u.CNPJ == cnpj);
+
+            return usuario != null;
+        }
+
+        [AllowAnonymous]
+        public IActionResult CreateManager()
+        {
+            return View();
+        }
+
+        // POST: Usuarios/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [AllowAnonymous]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateManager([Bind("UsuarioId,UsuarioNome,UsuarioSenha,CNPJ,Perfil")] Usuario usuario)
+        {
+            if (NameAlredyExist(usuario.UsuarioNome))
+            {
+                ViewBag.Message = "Nome já existe";
+                return View(usuario);
+            }
+
+            if (CnpjAlredyExist(usuario.CNPJ))
+            {
+                ViewBag.Message = "CNPJ já existe";
+                return View(usuario);
+            }
+
+            if (ModelState.IsValid)
+            {
+                usuario.UsuarioSenha = BCrypt.Net.BCrypt.HashPassword(usuario.UsuarioSenha);
+                usuario.Perfil = Perfil.Gerente;
+                _context.Add(usuario);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "Produtos");
+            }
+
+            return View(usuario);
+        }
+
+        [AllowAnonymous]
         // GET: Usuarios/Create
         public IActionResult Create()
         {
@@ -106,17 +180,32 @@ namespace Horticlima.Controllers
         // POST: Usuarios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UsuarioId,UsuarioNome,UsuarioSenha,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("UsuarioId,UsuarioNome,UsuarioSenha,CPF,Perfil")] Usuario usuario)
         {
+            if (NameAlredyExist(usuario.UsuarioNome))
+            {
+                ViewBag.Message = "Nome já existe";
+                return View(usuario);
+            }
+
+            if (CnpjAlredyExist(usuario.CPF))
+            {
+                ViewBag.Message = "CPF já existe";
+                return View(usuario);
+            }
+
             if (ModelState.IsValid)
             {
                 usuario.UsuarioSenha = BCrypt.Net.BCrypt.HashPassword(usuario.UsuarioSenha);
+                usuario.Perfil = Perfil.User;
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Produtos");
             }
+
             return View(usuario);
         }
 
@@ -141,7 +230,7 @@ namespace Horticlima.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UsuarioId,UsuarioNome,UsuarioSenha,Perfil")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("UsuarioId,UsuarioNome,UsuarioSenha,CPF,CNPJ,Perfil")] Usuario usuario)
         {
             if (id != usuario.UsuarioId)
             {

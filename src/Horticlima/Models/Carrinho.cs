@@ -11,18 +11,17 @@ namespace Horticlima.Models
     public class Carrinho
     {
         public int CarrinhoId { get; set; }
+
         public int ProdutoId { get; set; }
         [ForeignKey("ProdutoId")]
         public Produto Produto { get; set; }
-
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal Preco { get; set; }
+        public int Preco { get; set; }
 
         [Range(1, int.MaxValue)]
         public int Quantidade { get; set; }
 
         public int UsuarioId { get; set; }
-        [ForeignKey("UsarioId")]
+        [ForeignKey("UsuarioId")]
         public Usuario Usuario { get; set; }
     }
 }

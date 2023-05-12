@@ -4,9 +4,7 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Produto</h4>
+<h1>Editar Produto</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,39 +12,36 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ProdutoId" />
             <div class="form-group">
-                <label asp-for="ProdutoNome" class="control-label"></label>
+                <label asp-for="ProdutoNome" class="control-label">Nome</label>
                 <input asp-for="ProdutoNome" class="form-control" />
                 <span asp-validation-for="ProdutoNome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProdutoDescricao" class="control-label"></label>
+                <label asp-for="ProdutoDescricao" class="control-label">Descrição</label>
                 <input asp-for="ProdutoDescricao" class="form-control" />
                 <span asp-validation-for="ProdutoDescricao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ProdutoImagemURL" class="control-label"></label>
+                <label asp-for="ProdutoImagemURL" class="control-label">Imagem (Url)</label>
                 <input asp-for="ProdutoImagemURL" class="form-control" />
                 <span asp-validation-for="ProdutoImagemURL" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Preco" class="control-label"></label>
+                <label asp-for="Preco" class="control-label">Preço (R$)</label>
                 <input asp-for="Preco" class="form-control" />
                 <span asp-validation-for="Preco" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Categoria" class="control-label"></label>
+                <label asp-for="Categoria" class="control-label">Categoria</label>
                 <select asp-for="Categoria" class="form-control" asp-items="Html.GetEnumSelectList<Categoria>()"></select>
                 <span asp-validation-for="Categoria" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar Alterações" class="btn btn-outline-info rounded-pill px-3" />
             </div>
+                <a class="btn btn-outline-danger rounded-pill px-3" asp-action="Management">Voltar</a>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

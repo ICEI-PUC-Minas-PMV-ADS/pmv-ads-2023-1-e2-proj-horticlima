@@ -4,36 +4,47 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<h1>Deletar</h1>
 
-<h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>Usuario</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.UsuarioNome)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.UsuarioNome)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UsuarioSenha)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UsuarioSenha)
-        </dd>
-        <dt class = "col-sm-2">
+        @if (Model.Perfil == Perfil.Gerente)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CNPJ)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CNPJ)
+            </dd>
+        }
+        @if (Model.Perfil == Perfil.User)
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CPF)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CPF)
+            </dd>
+        }
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Perfil)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Perfil)
         </dd>
     </dl>
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="UsuarioId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Remover Usuário" class="btn btn-outline-info rounded-pill px-3" /> 
     </form>
+        <a class="btn btn-danger rounded-pill px-3 my-3" asp-action="Index"> Voltar </a>
 </div>

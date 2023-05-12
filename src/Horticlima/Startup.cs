@@ -22,6 +22,12 @@ namespace Horticlima
             Configuration = configuration;
         }
 
+        public static class Roles
+        {
+            public const string Gerente = "Gerente";
+            public const string User = "User";
+        }
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -42,6 +48,20 @@ namespace Horticlima
                 {
                     options.AccessDeniedPath = "/Usuarios/AcessDenied/";
                     options.LoginPath = "/Usuarios/Login/";
+                });
+
+            services.
+                AddAuthorization(options =>
+                {
+                    options.AddPolicy(Roles.Gerente, policy =>
+                    {
+                        policy.RequireRole(Roles.Gerente);
+                        
+                    });
+                    options.AddPolicy(Roles.User, policy =>
+                    {
+                        policy.RequireRole(Roles.User);
+                    });
                 });
 
             services.AddControllersWithViews();
@@ -68,8 +88,9 @@ namespace Horticlima
 
             app.UseCookiePolicy();
 
-            app.UseAuthorization();
             app.UseAuthentication();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

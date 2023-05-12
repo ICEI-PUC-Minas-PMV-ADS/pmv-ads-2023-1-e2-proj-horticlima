@@ -4,22 +4,40 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Editar</h1>
 
 <h4>Usuario</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"> </div>
             <input type="hidden" asp-for="UsuarioId" />
             <div class="form-group">
-                <label asp-for="UsuarioNome" class="control-label"></label>
+                <label asp-for="UsuarioNome" class="control-label"> Nome </label>
                 <input asp-for="UsuarioNome" class="form-control" />
                 <span asp-validation-for="UsuarioNome" class="text-danger"></span>
             </div>
+            @if (Model.Perfil == Perfil.Gerente)
+            {
+                <div class="form-group">
+                    <label asp-for="CNPJ" class="control-label"> CNPJ </label>
+                    <input asp-for="CNPJ" class="form-control" />
+                    <span asp-validation-for="CNPJ" class="text-danger"></span>
+                </div>
+            }
+
+            @if (Model.Perfil == Perfil.User)
+            {
+                <div class="form-group">
+                    <label asp-for="CPF" class="control-label"> CPF </label>
+                    <input asp-for="CPF" class="form-control" />
+                    <span asp-validation-for="CPF" class="text-danger"></span>
+                </div>
+            }
+
             <div class="form-group">
-                <label asp-for="UsuarioSenha" class="control-label"></label>
+                <label asp-for="UsuarioSenha" class="control-label"> Senha </label>
                 <input asp-for="UsuarioSenha" class="form-control" />
                 <span asp-validation-for="UsuarioSenha" class="text-danger"></span>
             </div>
@@ -29,14 +47,11 @@
                 <span asp-validation-for="Perfil" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar Alterações" class="btn btn-outline-info rounded-pill px-3" />
             </div>
+            <a class="btn btn-danger rounded-pill px-3" asp-action="Index"> Voltar </a>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
