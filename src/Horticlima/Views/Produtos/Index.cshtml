@@ -51,9 +51,11 @@
                     <div class="card-body">
                         <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
                         <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" /> R$ @Html.DisplayFor(modelItem => item.Preco),00</a>
-                        </div>
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.Preco)</p>
+                        <a asp-controller="Carrinho" asp-action="AdicionarItem" asp-route-id="@item.ProdutoId" class="btn btn-primary">
+                            <img src="~/assets/addcart.png" width="18px" /> Adicionar ao Carrinho
+                        </a>
+                        
                     </div>
                 </div>
             }
@@ -72,7 +74,7 @@
                         <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
                         <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" /> R$ @Html.DisplayFor(modelItem => item.Preco),00</a>
+                            <a asp-controller="" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" />@Html.DisplayFor(modelItem => item.Preco)</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +95,7 @@
                         <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
                         <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
                         <div class="d-flex justify-content-center align-items-center">
-                            <a asp-controller="Carrinhos" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" /> R$ @Html.DisplayFor(modelItem => item.Preco),00</a>
+                            <a asp-controller="" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" />@Html.DisplayFor(modelItem => item.Preco)</a>
                         </div>
                     </div>
                 </div>

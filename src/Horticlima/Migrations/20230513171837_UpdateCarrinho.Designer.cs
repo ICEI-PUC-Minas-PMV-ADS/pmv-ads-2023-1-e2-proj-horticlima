@@ -4,14 +4,16 @@ using Horticlima.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Horticlima.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230513171837_UpdateCarrinho")]
+    partial class UpdateCarrinho
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,7 +41,7 @@ namespace Horticlima.Migrations
 
                     b.HasIndex("ProdutoId");
 
-                    b.ToTable("CarrinhoItens");
+                    b.ToTable("CarrinhoItem");
                 });
 
             modelBuilder.Entity("Horticlima.Models.Produto", b =>

@@ -65,6 +65,8 @@ namespace Horticlima
                 });
 
             services.AddControllersWithViews();
+
+            services.AddScoped<Carrinho>();
         }
 
 

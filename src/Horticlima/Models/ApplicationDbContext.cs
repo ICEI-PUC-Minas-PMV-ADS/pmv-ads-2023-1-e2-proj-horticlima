@@ -14,7 +14,7 @@ namespace Horticlima.Models
         }
 
         public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Carrinho> Carrinho { get; set; }
+        public DbSet<CarrinhoItem> CarrinhoItens { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
     }
 }

@@ -1,0 +1,51 @@
+﻿@model Horticlima.ViewModels.CarrinhoVw
+
+<div class="container">
+    <div>
+        <h2> Seu carrinho de compras: </h2>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Quantidade</th>
+                <th>Nome</th>
+                <th class="text-right">Preço</th>
+                <th class="text-right">SubTotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Carrinho.CarrinhoItems)
+            {
+            <tr>
+                <td class="text-center">@item.Quantidade</td>
+                <td class="text-right">@item.Produto.ProdutoNome</td>
+                <td class="text-left">@item.Produto.Preco.ToString("c")</td>
+                <td class="text-center">
+                    @((item.Quantidade * item.Produto.Preco).ToString("c"))
+                </td>
+                <td class="text-right">
+                    <a asp-controller="Carrinho" asp-action="RemoverItem" asp-route-id="@item.Produto.ProdutoId">
+                        <i class="fa-sharp fa-solid fa-trash" style="color: darkgray"></i>
+                    </a>
+                </td>
+            </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-right"> Total: </td>
+                <td class="text-right">@Model.CarrinhoTotal.ToString("c")</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="text-right">
+    <div class="btn-group">
+        <a asp-controller="Pedido" asp-action="Checkou" class="btn btn-outline-sucess">Concluir Pedido</a>
+        &nbsp;&nbsp;
+        <a asp-controller="Produtos" asp-action="Index" class="btn btn-outline-primary">Continuar Comprando</a>
+    </div>
+</div>
+
+

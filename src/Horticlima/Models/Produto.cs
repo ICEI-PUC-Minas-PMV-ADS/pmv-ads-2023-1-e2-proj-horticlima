@@ -19,7 +19,10 @@ namespace Horticlima.Models
         public string ProdutoImagemURL { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o preço o produto!")]
-        public int Preco { get; set; }
+        [Column(TypeName = "decimal(10,2)")]
+        [DisplayFormat(DataFormatString = "{0:C2}")]
+        [DataType(DataType.Currency)]
+        public decimal Preco { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a categoria do produto!")]
         public Categoria Categoria { get; set; }
