@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Shared\NovaPasta\**" />
+    <Content Remove="Views\Shared\NovaPasta\**" />
+    <EmbeddedResource Remove="Views\Shared\NovaPasta\**" />
+    <None Remove="Views\Shared\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\css\Produtos.css" />
     <Content Remove="wwwroot\css\site - Cópia.css" />
   </ItemGroup>
