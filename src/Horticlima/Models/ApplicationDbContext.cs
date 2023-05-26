@@ -11,6 +11,7 @@ namespace Horticlima.Models
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public DbSet<Produto> Produtos { get; set; }
