@@ -10,6 +10,6 @@ Horticlima
 
 Foi elaborado uma apresentação em powerpoint do projeto com os principais pontos do projeto, assim como pontos a serem aperfeiçoados e conclusão.
 
-Conforme telas abaixo.
+Apresentação de PDF.
 
 
