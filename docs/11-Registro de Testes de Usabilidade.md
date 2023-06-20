@@ -1,13 +1,23 @@
-# Registro de Testes de Usabilidade
+![Binder1 pdf_Page_01](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/b6cd5e1b-ee66-4269-ab49-9faa14ba0152)
+![Binder1 pdf_Page_02](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/53985163-e0be-4eac-8f5f-6f9ab90615fe)
+![Binder1 pdf_Page_03](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/47ff834a-bf9b-44da-8096-cc08d6bbf4e1)
+![Binder1 pdf_Page_04](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/f984ef38-2de3-4080-8dea-1e9c9c08ef52)
+![Binder1 pdf_Page_05](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/eb4c00df-ebcf-4880-9523-6e9ff149a95d)
+![Binder1 pdf_Page_06](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/0e2c079d-f1d3-41c2-9de5-401a8de986da)
+![Binder1 pdf_Page_07](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/aae4256e-3b4c-487f-b4ab-059713ac885a)
+![Binder1 pdf_Page_08](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/96725a8a-cf67-4965-b480-47a6a9712616)
+![Binder1 pdf_Page_09](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/a4fd5750-dcaa-4e03-82de-d91fad80a58e)
+![Binder1 pdf_Page_10](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/db5ed0c0-8c56-4c74-8970-20e1f60b124d)
+![Binder1 pdf_Page_11](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/f692f642-24c0-4241-be2c-a92b9c3a19af)
+![Binder1 pdf_Page_12](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/a34249f8-9ce5-4187-b3d0-6f331b4b6f10)
+![Binder1 pdf_Page_13](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/910913be-5ec1-4317-9c5d-0ff07d396593)
+![Binder1 pdf_Page_14](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/ff23567b-2544-48f5-8dd7-422009313912)
+![Binder1 pdf_Page_15](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/901fd29e-bb1f-46b4-9e3d-5a2098e8961c)
+![Binder1 pdf_Page_16](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/bdb00e85-181c-4e51-85ff-0a90515233f6)
+![Binder1 pdf_Page_17](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/f9f5e48f-687c-4499-91e8-e57f386d4a89)
+![Binder1 pdf_Page_18](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/f8a661e2-9d05-4735-95dd-bddc6e05fb7a)
+![Binder1 pdf_Page_19](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/8df49bf0-f6d4-4503-9b33-7467a3f16291)
+![Binder1 pdf_Page_20](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/5324722b-f591-4600-964e-999bef3bd97f)
+![Binder1 pdf_Page_21](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e2-proj-horticlima/assets/114196258/c40eaee3-bc47-421b-95d2-ab6756c364e9)
 
-**CT-01 – Responsividade** <br>
-Critério de Êxito - Adaptação e responsividade do site para diferentes tamanhos de tela. <br>
-Avaliação - A aplicação ainda não está completamente responsiva e ainda precisa de alguns ajustes.
-![image](/docs/img/Responsivo.png)
-
-
-**CT-2 - Contraste e Design** <br> 
-Critério de Êxito - Contraste e clareza nas informações contidas na página. <br>
-Avaliação - A aplicação possui clareza nas informações porém ainda não possui uma identidade visual única.
-![image](/docs/img/TemplatePadrãoTeste.png)
 
