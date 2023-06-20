@@ -13,7 +13,6 @@ As causas dessas grandes perdas estão ligadas a diversos fatores como furtos, e
 
 ## Integrantes
 
- * Daniel Jonatan Silva dos Santos
  * Erasmo Alves da Silva Junior
  * Felipe Gonçalves Sobrinho
  * Geovanne Marco Correa da Silva
