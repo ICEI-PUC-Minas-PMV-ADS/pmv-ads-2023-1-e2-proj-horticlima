@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Horticlima.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Horticlima.Models;
-using Microsoft.AspNetCore.Authorization;
 
 namespace Horticlima.Controllers
 {
@@ -78,7 +76,7 @@ namespace Horticlima.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProdutoId,ProdutoNome,ProdutoImagemURL,ProdutoDescricao,Preco,Categoria")] Produto produto)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Add(produto);
                 await _context.SaveChangesAsync();

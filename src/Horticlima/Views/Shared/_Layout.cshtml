@@ -11,7 +11,9 @@
     <header>
         <nav class="navbar container navbar-light bg-white border-bottom d-flex flex-nowrap align-items-center">
             <div class="d-flex align-items-center justify-content-center">
+                <img src="/assets/Logo Horticlima.png" width="120" height="120" />
                 <a class="navbar-brand" asp-controller="Produtos" asp-action="Index">Horticlima</a>
+
                 @if (User.IsInRole("Admin"))
                 {
                     <a class="btn btn-outline-danger rounded-pill mx-3" asp-controller="Usuarios" asp-action="Index"> Gerenciar Usuarios</a>
@@ -26,13 +28,13 @@
                 {
                     <h5 class="nav-item m-0"> Olá, @User.Identity.Name </h5>
                     <a class="btn btn-danger text-white rounded-pill ml-3 px-3" asp-area="" asp-controller="Usuarios" asp-action="Logout"> Logout </a>
+                    <a asp-controller="Carrinho" asp-route-user="@User.Identities.First().Claims.AsEnumerable().First().Value" asp-action="Index"> <img src="~/assets/carrinho.svg" class="mx-3" style="width: 17px; cursor: pointer;" /> </a>
                 }
                 else
                 {
                     <a class="btn btn-danger text-white rounded-pill ml-3 px-3" asp-controller="Usuarios" asp-action="Login"> Login </a>
                 }
-                <a asp-controller="" asp-action=""> <img src="~/assets/carrinho.svg" class="mx-3" style="width: 17px; cursor: pointer;" asp-controller="Carrinhos" asp-action="Index" /> </a>
-                <img class="menu-list" src="~/assets/list.svg" />
+
             </div>
         </nav>
     </header>

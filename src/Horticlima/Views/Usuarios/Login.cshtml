@@ -28,10 +28,10 @@
                             <div class="form-group">
                                 <button class="btn btn-outline-light btn-lg px-5" type="submit"> Login </button>
                             </div>
-                            <p class="small mb-3 pb-lg-2"><a class="text-white-50" asp-controller="Produtos">Esqueceu a senha?</a></p>
+                            <p class="small mb-3 pb-lg-2"><a class="text-white-50" href="@Url.Action("Index", "Produtos")">Esqueceu a senha?</a></p>
 
                             <p class="mb-0">
-                                Ainda não possui cadastro? <a class="text-white-50 fw-bold">Cadastrar-se</a>
+                                Ainda não possui cadastro? <a class="text-white-50 fw-bold" href="@Url.Action("Index", "Produtos")">Cadastrar-se</a>
                             </p>
                         </div>
                     </form>

@@ -1,5 +1,3 @@
-using System;
-
 namespace Horticlima.Models
 {
     public class ErrorViewModel

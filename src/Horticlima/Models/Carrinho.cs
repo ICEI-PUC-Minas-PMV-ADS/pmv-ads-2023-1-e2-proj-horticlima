@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Horticlima.Models
 {
@@ -34,17 +33,24 @@ namespace Horticlima.Models
             };
         }
 
-        public void AdicionarItemNoCarrinho(Produto produto)
+        public void AdicionarItemNoCarrinho(Produto produto, int Usuario)
         {
             var itens = _appDbContext.CarrinhoItens
-                .FirstOrDefault(x => x.Produto.ProdutoId == produto.ProdutoId && x.CarrinhoId == CarrinhoId);
+                .FirstOrDefault(x => x.Produto.ProdutoId == produto.ProdutoId && x.CarrinhoId == CarrinhoId && x.Usuario.UsuarioId == Usuario);
+
+            var usuario = _appDbContext.Usuarios
+           .FirstOrDefault(x => x.UsuarioId == Usuario);
+
+
+
             if (itens == null)
             {
                 itens = new CarrinhoItem()
                 {
                     Produto = produto,
                     Quantidade = 1,
-                    CarrinhoId = CarrinhoId
+                    CarrinhoId = CarrinhoId,
+                    Usuario = usuario
                 };
                 _appDbContext.CarrinhoItens.Add(itens);
             }
@@ -55,10 +61,10 @@ namespace Horticlima.Models
             _appDbContext.SaveChanges();
         }
 
-        public int RemoverItemNoCarrinho(Produto produto)
+        public int RemoverItemNoCarrinho(CarrinhoItem carrinhoItem)
         {
             var itens = _appDbContext.CarrinhoItens
-                .FirstOrDefault(x => x.Produto.ProdutoId == produto.ProdutoId && x.CarrinhoId == CarrinhoId);
+                .FirstOrDefault(x => x.Produto.ProdutoId == carrinhoItem.Produto.ProdutoId && x.CarrinhoItemId == carrinhoItem.CarrinhoItemId);
             var quantity = 0;
             if (itens != null)
             {
@@ -76,11 +82,22 @@ namespace Horticlima.Models
             return quantity;
         }
 
-        public IList<CarrinhoItem> GetCarrinhoItems()
+        public IList<CarrinhoItem> GetCarrinhoItemsCheckout(int carrinho)
         {
             return CarrinhoItems ?? (CarrinhoItems = _appDbContext.CarrinhoItens
-                .Where(x => x.CarrinhoId == CarrinhoId).
+                .Where(x => x.CarrinhoItemId == carrinho).
                 Include(x => x.Produto).
+                Include(x => x.Usuario).
+                ToList());
+        }
+
+
+        public IList<CarrinhoItem> GetCarrinhoItems(int User)
+        {
+            return CarrinhoItems ?? (CarrinhoItems = _appDbContext.CarrinhoItens
+                .Where(x => x.CarrinhoId == CarrinhoId && x.Usuario.UsuarioId == User).
+                Include(x => x.Produto).
+                Include(x => x.Usuario).
                 ToList());
         }
 
@@ -92,10 +109,10 @@ namespace Horticlima.Models
             _appDbContext.SaveChanges();
         }
 
-        public decimal GetTotal()
+        public decimal GetTotal(int User)
         {
             var total = _appDbContext.CarrinhoItens
-                .Where(x => x.CarrinhoId == CarrinhoId)
+                .Where(x => x.CarrinhoId == CarrinhoId && x.Usuario.UsuarioId == User)
                 .Select(x => x.Quantidade * x.Produto.Preco)
                 .Sum();
 

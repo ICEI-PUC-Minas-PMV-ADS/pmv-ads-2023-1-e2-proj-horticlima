@@ -40,15 +40,13 @@
                     <div class="card-body">
                         <p class="card-title"><strong>Nome:</strong> @Html.DisplayFor(modelItem => item.ProdutoNome)</p>
                         <p class="card-text"><strong>Descrição:</strong> @Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
-                        <p class="card-text"><strong>Preço:</strong> R$ @Html.DisplayFor(modelItem => item.Preco),00</p>
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <div class="d-flex justify-content-between mt-2">
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
-                            </div>
-                        }
+                        <p class="card-text"><strong>Preço:</strong> @Html.DisplayFor(modelItem => item.Preco)</p>
+
+                        <div class="d-flex justify-content-between mt-2">
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                        </div>
                     </div>
                 </div>
             }
@@ -66,15 +64,13 @@
                     <div class="card-body">
                         <p class="card-title"><strong>Nome:</strong> @Html.DisplayFor(modelItem => item.ProdutoNome)</p>
                         <p class="card-text"><strong>Descrição:</strong> @Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
-                        <p class="card-text"><strong>Preço:</strong> R$ @Html.DisplayFor(modelItem => item.Preco),00</p>
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <div class="d-flex justify-content-between mt-2">
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
-                            </div>
-                        }
+                        <p class="card-text"><strong>Preço:</strong> @Html.DisplayFor(modelItem => item.Preco)</p>
+
+                        <div class="d-flex justify-content-between mt-2">
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                        </div>
                     </div>
                 </div>
             }
@@ -92,15 +88,13 @@
                     <div class="card-body">
                         <p class="card-title"><strong>Nome:</strong> @Html.DisplayFor(modelItem => item.ProdutoNome)</p>
                         <p class="card-text"><strong>Descrição:</strong> @Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
-                        <p class="card-text"><strong>Preço:</strong> R$ @Html.DisplayFor(modelItem => item.Preco),00</p>
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <div class="d-flex justify-content-between mt-2">
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
-                                <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
-                            </div>
-                        }
+                        <p class="card-text"><strong>Preço:</strong> @Html.DisplayFor(modelItem => item.Preco)</p>
+
+                        <div class="d-flex justify-content-between mt-2">
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Edit" asp-route-id="@item.ProdutoId">Editar</a>
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Details" asp-route-id="@item.ProdutoId">Detalhes</a>
+                            <a class="btn btn-outline-info rounded-pill px-3 my-3" asp-action="Delete" asp-route-id="@item.ProdutoId">Deletar</a>
+                        </div>
                     </div>
                 </div>
             }

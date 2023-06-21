@@ -27,84 +27,97 @@
         <div class="container d-flex mt-4 align-items-center justify-content-around">
             <a asp-controller="Usuarios" asp-action="CreateManager" class="card border-dark" style="width: 45%; height: 50vh; background-image: url('/assets/bannerimg2.png'); background-size:cover;">
                 <div class="card-body">
-                    <h3 class="card-text text-black">Cadastre-se como fornecedor</h3>
+                    <h4 class="card-text text-black">Seja nosso fornecedor...</h4>
                 </div>
             </a>
-            <h4 class="px-2"> Ou então </h4>
             <a asp-controller="Usuarios" asp-action="Create" class="card border-dark" style="width: 45%; height: 50vh; background-image: url('/assets/bannerimg4.png'); background-size:cover;">
                 <div class="card-body">
-                    <h3 class="card-text text-black">Cadastre-se</h3>
+                    <h4 class="card-text text-black">Seja nosso consumidor...</h4>
                 </div>
             </a>
         </div>
     }
 </div>
-<div class="container d-flex flex-column">
-    <a name="Frutas"> <h2 class="mt-4 mb-4"> Frutas </h2> </a>
-    <div class="container d-flex flex-wrap">
-        @foreach (var item in Model)
-        {
-            @if (item.Categoria == Categoria.Frutas)
-            {
-                <div class="card mb-3 mr-3" style="width: 23%">
-                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
-                    <div class="card-body">
-                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
-                        <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
-                        <p class="card-text">@Html.DisplayFor(modelItem => item.Preco)</p>
-                        <a asp-controller="Carrinho" asp-action="AdicionarItem" asp-route-id="@item.ProdutoId" class="btn btn-primary">
-                            <img src="~/assets/addcart.png" width="18px" /> Adicionar ao Carrinho
-                        </a>
-                        
-                    </div>
-                </div>
-            }
-        }
-    </div>
-    <a name="Legumes"> <h2 class="mt-4 mb-4"> Legumes </h2> </a>
-    <div class="container d-flex flex-wrap">
-        @foreach (var item in Model)
-        {
-            @if (item.Categoria == Categoria.Legumes)
-            {
+@if (User.Identity.IsAuthenticated == true)
+{
+    <div class="container d-flex flex-column">
 
-                <div class="card mb-3 mr-3" style="width: 20%">
-                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
-                    <div class="card-body">
-                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
-                        <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <a asp-controller="" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" />@Html.DisplayFor(modelItem => item.Preco)</a>
+
+        <a name="Frutas"> <h2 class="mt-4 mb-4"> Frutas </h2> </a>
+        <div class="container d-flex flex-wrap">
+
+
+            @foreach (var item in Model)
+            {
+                @if (item.Categoria == Categoria.Frutas)
+                {
+                    <div class="card mb-3 mr-3" style="width: 23%">
+                        <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
+                        <div class="card-body">
+                            <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.Preco)</p>
+                            <a asp-controller="Carrinho" asp-action="AdicionarItem" asp-route-id="@item.ProdutoId" asp-route-user="@User.Identities.First().Claims.AsEnumerable().First().Value" class="btn btn-primary">
+                                <img src="~/assets/addcart.png" width="18px" /> Adicionar ao Carrinho
+                            </a>
+
                         </div>
                     </div>
-                </div>
+                }
             }
 
-        }
-    </div>
-    <a name="Verduras"> <h2 class="mt-4 mb-4"> Verduras </h2> </a>
-    <div class="container d-flex flex-wrap">
-        @foreach (var item in Model)
-        {
-            @if (item.Categoria == Categoria.Verduras)
-            {
+        </div>
 
-                <div class="card mb-3 mr-3" style="width: 20%">
-                    <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
-                    <div class="card-body">
-                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
-                        <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <a asp-controller="" class="btn btn-primary"><img src="~/assets/addcart.png" width="18px" />@Html.DisplayFor(modelItem => item.Preco)</a>
+        <a name="Legumes"> <h2 class="mt-4 mb-4"> Legumes </h2> </a>
+        <div class="container d-flex flex-wrap">
+            @foreach (var item in Model)
+            {
+                @if (item.Categoria == Categoria.Legumes)
+                {
+
+                    <div class="card mb-3 mr-3" style="width: 20%">
+                        <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
+                        <div class="card-body">
+                            <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.Preco)</p>
+                            <a asp-controller="Carrinho" asp-action="AdicionarItem" asp-route-id="@item.ProdutoId" asp-route-user="@User.Identities.First().Claims.AsEnumerable().First().Value" class="btn btn-primary">
+                                <img src="~/assets/addcart.png" width="18px" /> Adicionar ao Carrinho
+                            </a>
                         </div>
                     </div>
-                </div>
+                }
+
             }
-        }
+        </div>
+        <a name="Verduras"> <h2 class="mt-4 mb-4"> Verduras </h2> </a>
+        <div class="container d-flex flex-wrap">
+            @foreach (var item in Model)
+            {
+                @if (item.Categoria == Categoria.Verduras)
+                {
 
+                    <div class="card mb-3 mr-3" style="width: 20%">
+                        <img src="@item.ProdutoImagemURL" alt="@item.ProdutoNome" />
+                        <div class="card-body">
+                            <h5 class="card-title">@Html.DisplayFor(modelItem => item.ProdutoNome)</h5>
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.ProdutoDescricao)</p>
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.Preco)</p>
+                            <a asp-controller="Carrinho" asp-action="AdicionarItem" asp-route-id="@item.ProdutoId" asp-route-user="@User.Identities.First().Claims.AsEnumerable().First().Value" class="btn btn-primary">
+                                <img src="~/assets/addcart.png" width="18px" /> Adicionar ao Carrinho
+                            </a>
+                        </div>
+                    </div>
+                }
+            }
+
+        </div>
     </div>
-
-</div>
+}
+else
+{
+    <center name="Frutas"> <h5 class="mt-4 mb-4"> Faça o seu cadastro para ter acesso a nossas promoções </h5>  </center>
+}
 
 
 

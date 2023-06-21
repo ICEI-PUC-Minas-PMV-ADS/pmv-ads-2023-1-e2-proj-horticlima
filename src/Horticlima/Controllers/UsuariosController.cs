@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Horticlima.Models;
-using System.Security.Claims;
+﻿using Horticlima.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace Horticlima.Controllers
 {
@@ -47,8 +46,8 @@ namespace Horticlima.Controllers
             {
                 var claims = new List<Claim>
                 {
+                    new Claim(ClaimTypes.NameIdentifier, user.UsuarioId.ToString()),
                     new Claim(ClaimTypes.Name, user.UsuarioNome),
-                    new Claim(ClaimTypes.NameIdentifier, user.UsuarioNome!),
                     new Claim(ClaimTypes.Role, user.Perfil.ToString()),
                 };
 
@@ -66,14 +65,17 @@ namespace Horticlima.Controllers
                 await HttpContext.SignInAsync(principal, props);
 
                 return Redirect("/Produtos");
-            } else {
+            }
+            else
+            {
                 ViewBag.Message = "Usuário e/ou senha inválido!";
                 return View();
             }
         }
 
         [AllowAnonymous]
-        public async Task<IActionResult> Logout(){
+        public async Task<IActionResult> Logout()
+        {
             await HttpContext.SignOutAsync();
             return Redirect("/Produtos");
         }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\felip\\Source\\Repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {}
+    "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {}
   },
   "projects": {
-    "C:\\Users\\felip\\Source\\Repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {
+    "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\felip\\Source\\Repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
+        "projectUniqueName": "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
         "projectName": "Horticlima",
-        "projectPath": "C:\\Users\\felip\\Source\\Repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\felip\\Source\\Repos\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\obj\\",
+        "projectPath": "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
+        "packagesPath": "C:\\Users\\Vanessa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanessa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +44,10 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
@@ -79,7 +84,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -91,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -35,9 +35,14 @@ namespace Horticlima.Migrations
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UsuarioId")
+                        .HasColumnType("int");
+
                     b.HasKey("CarrinhoItemId");
 
                     b.HasIndex("ProdutoId");
+
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("CarrinhoItens");
                 });
@@ -97,7 +102,7 @@ namespace Horticlima.Migrations
 
                     b.HasKey("UsuarioId");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuario");
                 });
 
             modelBuilder.Entity("Horticlima.Models.CarrinhoItem", b =>
@@ -106,7 +111,13 @@ namespace Horticlima.Migrations
                         .WithMany()
                         .HasForeignKey("ProdutoId");
 
+                    b.HasOne("Horticlima.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId");
+
                     b.Navigation("Produto");
+
+                    b.Navigation("Usuario");
                 });
 #pragma warning restore 612, 618
         }

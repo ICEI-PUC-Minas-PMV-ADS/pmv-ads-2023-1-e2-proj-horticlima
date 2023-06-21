@@ -2,10 +2,7 @@
 using Horticlima.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Horticlima.Controllers
 {
@@ -20,38 +17,39 @@ namespace Horticlima.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int user)
         {
-            var itens = _carrinho.GetCarrinhoItems();
+            var itens = _carrinho.GetCarrinhoItems(user);
             _carrinho.CarrinhoItems = itens;
 
             var CarrinhoVw = new CarrinhoVw()
             {
                 Carrinho = _carrinho,
-                CarrinhoTotal = _carrinho.GetTotal()
+                CarrinhoTotal = _carrinho.GetTotal(user)
             };
             return View(CarrinhoVw);
         }
 
-        public IActionResult AdicionarItem(int? id)
+        public IActionResult AdicionarItem(int? id, int user)
         {
+
             var carrinho = _context.Produtos.FirstOrDefault(x => x.ProdutoId == id);
             if (carrinho != null)
             {
-                _carrinho.AdicionarItemNoCarrinho(carrinho);
+                _carrinho.AdicionarItemNoCarrinho(carrinho, user);
             }
+            return RedirectToAction("Index", "Carrinho", new { user = user });
 
-            return RedirectToAction("Index");
         }
 
-        public IActionResult RemoverItem(int? id)
+        public IActionResult RemoverItem(int id, int produto, int user)
         {
-            var carrinho = _context.Produtos.FirstOrDefault(x => x.ProdutoId == id);
-            if (carrinho != null)
+            var carrinho = _context.CarrinhoItens.Where(c => c.CarrinhoItemId == id && c.Produto.ProdutoId == produto).Include(c => c.Produto).FirstOrDefault();
+            if (carrinho is not null)
             {
-                _carrinho.RemoverItemNoCarrinho(carrinho);
+               _carrinho.RemoverItemNoCarrinho(carrinho);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Carrinho", new { user = user });
         }
     }
 }

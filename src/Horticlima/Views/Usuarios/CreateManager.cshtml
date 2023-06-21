@@ -21,7 +21,7 @@
                             </div>
                             <div class="form-group">
                                 <label asp-for="CNPJ" class="control-label"> CNPJ </label>
-                                <input placeholder="Insira o CNPJ" asp-for="CNPJ" class="form-control" />
+                                <input placeholder="Insira o CNPJ" asp-for="CNPJ" class="form-control" pattern="\d{14}" maxlength="14" required />
                                 <span asp-validation-for="CNPJ" class="text-danger"></span>
                             </div>
                             <div class="form-group pb-2">

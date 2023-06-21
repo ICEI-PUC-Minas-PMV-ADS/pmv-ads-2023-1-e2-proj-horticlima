@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Horticlima.Models
+﻿namespace Horticlima.Models
 {
     public class CarrinhoItem
     {
@@ -16,6 +9,6 @@ namespace Horticlima.Models
         public int Quantidade { get; set; }
 
         public string CarrinhoId { get; set; }
-
+        public Usuario Usuario { get; internal set; }
     }
 }

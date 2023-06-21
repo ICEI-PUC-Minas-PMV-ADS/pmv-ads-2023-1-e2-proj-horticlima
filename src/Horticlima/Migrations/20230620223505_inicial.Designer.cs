@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Horticlima.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230507152303_updateprodutomodel")]
-    partial class updateprodutomodel
+    [Migration("20230620223505_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,35 +21,32 @@ namespace Horticlima.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Horticlima.Models.Carrinho", b =>
+            modelBuilder.Entity("Horticlima.Models.CarrinhoItem", b =>
                 {
-                    b.Property<int>("CarrinhoId")
+                    b.Property<int>("CarrinhoItemId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<decimal>("Preco")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("CarrinhoId")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProdutoId")
+                    b.Property<int?>("ProdutoId")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UsarioId")
+                    b.Property<int?>("UsuarioId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CarrinhoId");
+                    b.HasKey("CarrinhoItemId");
 
                     b.HasIndex("ProdutoId");
 
-                    b.HasIndex("UsarioId");
+                    b.HasIndex("UsuarioId");
 
-                    b.ToTable("Carrinho");
+                    b.ToTable("CarrinhoItens");
                 });
 
             modelBuilder.Entity("Horticlima.Models.Produto", b =>
@@ -63,7 +60,7 @@ namespace Horticlima.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("Preco")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(10,2)");
 
                     b.Property<string>("ProdutoDescricao")
                         .IsRequired()
@@ -88,6 +85,12 @@ namespace Horticlima.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("CNPJ")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CPF")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Perfil")
                         .HasColumnType("int");
 
@@ -101,20 +104,18 @@ namespace Horticlima.Migrations
 
                     b.HasKey("UsuarioId");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuario");
                 });
 
-            modelBuilder.Entity("Horticlima.Models.Carrinho", b =>
+            modelBuilder.Entity("Horticlima.Models.CarrinhoItem", b =>
                 {
                     b.HasOne("Horticlima.Models.Produto", "Produto")
                         .WithMany()
-                        .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ProdutoId");
 
                     b.HasOne("Horticlima.Models.Usuario", "Usuario")
                         .WithMany()
-                        .HasForeignKey("UsarioId");
+                        .HasForeignKey("UsuarioId");
 
                     b.Navigation("Produto");
 
