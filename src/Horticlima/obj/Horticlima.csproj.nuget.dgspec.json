@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {}
+    "C:\\Users\\Vanessa\\source\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {
+    "C:\\Users\\Vanessa\\source\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
+        "projectUniqueName": "C:\\Users\\Vanessa\\source\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
         "projectName": "Horticlima",
-        "projectPath": "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
+        "projectPath": "C:\\Users\\Vanessa\\source\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\Horticlima.csproj",
         "packagesPath": "C:\\Users\\Vanessa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vanessa\\OneDrive\\Área de Trabalho\\PUC\\nova versao\\pmv-ads-2023-1-e2-proj-horticlima\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\obj\\",
+        "outputPath": "C:\\Users\\Vanessa\\source\\pmv-ads-2023-1-e2-proj-horticlima\\src\\Horticlima\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vanessa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,8 +83,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -97,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }
