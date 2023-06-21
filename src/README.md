@@ -2,10 +2,10 @@
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+O site foi desenvolvido utilizando a linguagem C#/HTML/CSS/JS, trata-se de um projeto estático, com armazenamento de banco de dados hospedado no Microsoft Azure.
 
 ## Histórico de versões
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado
-- Adicionado ...
+### [0.1.0] - 26/05/2023
+#### 
+- https://horticlima.azurewebsites.net/
